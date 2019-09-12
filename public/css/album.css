@@ -1,0 +1,262 @@
+body{overflow-y: scroll;
+    overflow-x: hidden;width:100%;margin:0;background-color:#fffffa !important;}
+ li{list-style:none;}
+ iframe{width:100%;height:100%;}
+ a{text-decoration:none !important;color: #484444 !important;}
+ a:hover{color: #ff9800 !important;}
+ #nav{width:1200px;height:100px;margin:0 auto;position:relative;background-color:#fffffa;}
+ .nav-item{height:80px;width:8%;margin-top:0px;float:left;cursor:pointer;}
+
+ #nav-logo{margin-top:20px;margin-left:0;height:40px;float:left;width:14%;cursor:pointer;margin-right:3%;}
+ #nav-mymusic{width:12%;}
+ #nav-mymusic p{width:84px;}
+ #nav-search{margin-left:13%;width:20%;margin-top:30px;height:30px;float:left;}
+ #nav-search input{padding:0 0 0 5px;float:left;width:100%;height:28px;font-size:14px;border-radius: 4px;border: 2px solid #a8a8a8;}
+ #nav-login{margin-left:4%;width:5%;height:25px;float:left;margin-top:30px;}
+ .nav-item p{font-size:20px;color:#343433;font-family:'Microsoft Yahei';height:22.25px;width:42px;margin:28.875px auto;}
+ #nav-login p a{font-size:18px;color:#484444;font-family:'Microsoft Yahei';height:20px;width:100%;margin:0;float:left; text-decoration: none;}
+ #nav-search-icon{position:absolute;top:57px;left:84%; margin-top:-2px;}
+ #nav ul{height:80px;width:100%;padding: 20px 0 0 0;margin:0;}
+ #middle-div{display:block;width:1200px;border:none;margin:0 auto; margin-top: 50px;background-color:#fffffa;}
+
+
+
+.middle_top{
+    width:100%;
+    height: 222px;
+}
+.song_introduce{
+    margin-left: 71px;
+    float: left;
+}
+.song_name{
+    font-size: 24px;
+    font-family: "微软雅黑";
+    margin-top: 18px;
+}
+.singerimg{
+    float: left;
+    margin-left: 10px;
+}
+
+
+.singerimg img{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+}
+.singer{
+    margin-left: 10px;
+    font-size: 16px;
+    color:#484444;
+    font-family: "微软雅黑";
+    margin-top: 2px;
+    position: absolute;
+}
+.singer_1{
+   margin: -6px 0 10px 0;
+}
+.singer_1 img{
+    width: 22px;
+    height: 22px;
+}
+.song_message{
+    font-size: 16px;
+    color: #484444;
+    font-family: "微软雅黑";
+}
+.song_message tr td{
+    width:250px;
+    height: 36px;
+    font-size: 16px;
+    color: #484444;
+}
+
+ .middle_top ul{
+     width: 530px;
+     height: 40px;
+     margin-top: 10px;
+     margin-left: -10px;
+     padding: 0px;
+ }
+.middle_top ul li{
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+    outline: none;
+}
+button{
+    width: 122px;
+    height: 36px;
+    border-radius: 2px;
+    background: #f3f3f3;
+    font-size: 16px;
+    color: #484444;
+    font-family: "微软雅黑";
+    border:1px solid #adabab;
+    position: relative;
+    outline: none !important;
+    cursor:pointer;
+}
+.play{
+    background: #ff9800;
+    border:none;
+    color: #fffffa;
+    outline: none;
+}
+
+button img{
+    position: absolute;
+    top:8px;
+    left: 24px;
+    outline: none;
+    width:30px !important;
+    height: 30px !important;
+    margin-top: -4px;
+    outline: none;
+}
+/* .play_image{
+    width:30px;
+    height: 30px;
+    margin-top: -4px;
+    outline: none;
+} */
+button span{
+    width:32px;
+    height: 21px;
+    position: absolute;
+    top: 6px;
+    right: 30px;
+    outline: none;
+}
+
+#modile_middle{
+    width:100%;
+    margin-top: 35px;
+    margin-left: 30px;
+    overflow:hidden;
+}
+
+#lyric{
+    float: left;
+    width: 672px;
+    margin-top: 30px;
+}
+
+
+.album_name{
+    font-size: 22px;
+    font-family: "微软雅黑";
+    color: #50504f;
+}
+
+#album_table{
+    width:600px;
+    margin-top: 20px;
+}
+
+thead{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #8a8989;
+}
+
+#album_table thead tr th{
+    padding-left: 30px;
+    width: 33%;
+}
+tbody{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #494747;
+}
+
+#album_table tbody tr td{
+    padding-left: 30px;
+    width: 33%;
+}
+#album_table tbody tr td img{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+#album_table tbody tr:hover img{
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 120px;
+}
+.openalbum{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff9800;
+    font-family: "微软雅黑";
+    cursor:pointer;
+}
+.closealbum{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff9800;
+    font-family: "微软雅黑";
+    display: none;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+
+#introduce{
+    width: 325px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+}
+
+.intorduce_1{
+    width:325px;
+    height: 90px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    color: #50504f;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#similar_recommendation{
+    width:325px;
+    height: 210px;
+    float: left;
+    margin-top: 37px;
+}
+.similar_1 {
+    width: 325px;
+    height: 210px;
+    padding: 0;
+}
+.similar_1 li{
+    width:108px;
+    height: 118px;
+    margin:0;
+    float: left;
+}
+
+.similar_1 li img{
+    width:98px;
+    height: 98px; 
+}
+.similar_2{
+    width: 110px;
+    text-align: center;
+    float: left;
+    font-family: "微软雅黑";
+    color: #50504f;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: -10px;
+}
+
+
+
+#footer{
+margin-top: 16px;
+}

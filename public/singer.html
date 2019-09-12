@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="./css/recommended_singers.css">
+    <style>
+        #foot-div {
+            height: 100px;
+            /*width: 100%;*/
+            background-color: #f4f3f2;
+            padding-top: 24px;
+            /*margin: 0 auto;*/
+            text-align: center;
+            margin:0 auto;
+            width:1200px;
+            font-size: 14px;
+            color: #2c2c2b;
+        }
+
+        #foot-div p {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        a:hover{color:#ff9800}
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li id="nav-logo">
+                <img src="img/logo.png" />
+            </li>
+            <li class="nav-item" id="nav-mainpage">
+                <p class="pnav">首页</p>
+            </li>
+            <li class="nav-item" id="nav-singer">
+                <p class="pnav">歌手</p>
+            </li>
+            <li class="nav-item" id="nav-music">
+                <p class="pnav">歌单</p>
+            </li>
+            <li class="nav-item" id="nav-mymusic">
+                <p class="pnav">我的音乐</p>
+            </li>
+            <li id="nav-search">
+                <input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+                    <img id="nav-search-icon" src="img/search.png" />
+            </li>
+            <li id="nav-login">
+
+                    <a href=""><p>登录</p></a>
+
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div id="middle-div" class="img_style">
+        <div id="middle-left">
+            <ul class="title-one">
+                <li>
+                    <div class="div-title-one">推荐</div>
+                    <ul class="title-two">
+                        <li onclick="abc();singer_recommend()" class="singer_click">
+                            <div class="li-two-div-unclicked" id="click-1" >&nbsp;&nbsp;&nbsp;&nbsp;推荐歌手</div>
+                        </li>
+                        <li onclick="abc();singer_hot()" class="singer_click">
+                            <div class="li-two-div-unclicked" id="click-2">&nbsp;&nbsp;&nbsp;&nbsp;热门歌手</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="div-title-one">华语</div>
+                    <ul class="title-two" >
+                        <li onclick="abc();singer_click()" class="singer_click" value="1_1">
+                            <div class="li-two-div-unclicked" id="click-3">&nbsp;&nbsp;&nbsp;&nbsp;华语男歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="1_2">
+                            <div class="li-two-div-unclicked" id="click-4">&nbsp;&nbsp;&nbsp;&nbsp;华语女歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="1_3">
+                            <div class="li-two-div-unclicked" id="click-5">&nbsp;&nbsp;&nbsp;&nbsp;华语组合/乐队</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="div-title-one">欧美</div>
+                    <ul class="title-two">
+                        <li onclick="abc();singer_click()" class="singer_click" value="2_1">
+                            <div class="li-two-div-unclicked" id="click-6">&nbsp;&nbsp;&nbsp;&nbsp;欧美男歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="2_2">
+                            <div class="li-two-div-unclicked" id="click-7">&nbsp;&nbsp;&nbsp;&nbsp;欧美女歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="2_3">
+                            <div class="li-two-div-unclicked" id="click-8">&nbsp;&nbsp;&nbsp;&nbsp;欧美组合/乐队</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="div-title-one">韩国</div>
+                    <ul class="title-two" >
+                        <li onclick="abc();singer_click()" class="singer_click" value="3_1">
+                            <div class="li-two-div-unclicked" id="click-9">&nbsp;&nbsp;&nbsp;&nbsp;韩国男歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="3_2">
+                            <div class="li-two-div-unclicked" id="click-10">&nbsp;&nbsp;&nbsp;&nbsp;韩国女歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="3_3">
+                            <div class="li-two-div-unclicked" id="click-11">&nbsp;&nbsp;&nbsp;&nbsp;韩国组合/乐队</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="div-title-one">其他</div>
+                    <ul class="title-two">
+                        <li onclick="abc();singer_click()" class="singer_click" value="4_1">
+                            <div class="li-two-div-unclicked" id="click-12">&nbsp;&nbsp;&nbsp;&nbsp;其他男歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="4_2">
+                            <div class="li-two-div-unclicked" id="click-13">&nbsp;&nbsp;&nbsp;&nbsp;其他女歌手</div>
+                        </li>
+                        <li onclick="abc();singer_click()" class="singer_click" value="4_3">
+                            <div class="li-two-div-unclicked" id="click-14">&nbsp;&nbsp;&nbsp;&nbsp;其他组合/乐队</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="middle-right">      
+        </div>
+    </div>
+
+
+
+    <div id="page_up_down"style="text-align:center;margin-top: 20px;clear:both;">
+
+    </div>
+
+
+    <div id="foot-div">
+        <p style="margin-top:0px;">
+            <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+        </p>
+        <p>布拿拿音乐版权所有© 2018</p>
+    </div>
+        
+        <!--<iframe src="footer.html" frameborder="0" name="middlepage" id="footer" scrolling="no"></iframe>-->
+</body>
+     <script type="text/javascript" src = "js/singer1.js">
+
+     </script>
+
+     <script type="text/javascript" src = "js/singer2.js">
+
+     </script>
+<script src="layui/layui.js" charset="utf-8"></script>
+<script src="layer/layer.js"></script>
+</html>

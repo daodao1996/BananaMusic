@@ -1,0 +1,287 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*height: 1000px;*/
+    width: 100%;
+    margin: 0;
+    background-color: #fffffa;
+}
+
+li {
+    list-style: none;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #484444;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff9800;
+}
+p {
+    font-family: 'Microsoft Yahei';
+}
+
+div {
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+span {
+    line-height: 30px;
+}
+
+#nav {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fffffa;
+}
+
+#nav > ul {
+    height: 80px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+.nav-item {
+    height: 80px;
+    width: 8%;
+    margin-top: 0px;
+    float: left;
+    cursor: pointer;
+}
+
+#nav-logo {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 40px;
+    float: left;
+    width: 14%;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+#nav-mymusic {
+    width: 12%;
+}
+
+#nav-mymusic p {
+    width: 84px;
+}
+
+#nav-search {
+    margin-left: 15%;
+    width: 22%;
+    margin-top: 30px;
+    height: 30px;
+    float: left;
+}
+
+#nav-search input {
+    padding: 0 0 0 5px;
+    float: left;
+    width: 100%;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 2px solid #a8a8a8;
+}
+
+#nav-login {
+    margin-left: 5%;
+    width: 5%;
+    height: 25px;
+    float: left;
+    margin-top: 30px;
+}
+
+.nav-item p {
+    font-size: 20px;
+    color: #343433;
+    font-family: 'Microsoft Yahei';
+    height: 22.25px;
+    width: 42px;
+    margin: 28.875px auto;
+}
+
+#nav-login p {
+    font-size: 18px;
+    color: #484444;
+    font-family: 'Microsoft Yahei';
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    float: left;
+}
+
+#nav-search-icon {
+    position: absolute;
+    top: 54px;
+    left: 87.8%;
+}
+
+#middle-div {
+    display: block;
+    width: 1200px;
+    /*border: 2px #eda893 solid;*/
+    margin: 0 auto;
+    height: 750px;
+}
+
+#register_bg::before {
+    content: "";
+    /*-webkit-filter: opacity(50%);
+    filter: opacity(50%); */
+    background: url("../img/login_bg.png") no-repeat;
+    opacity: 0.6;
+    /*透明度设置*/
+    z-index: -1;
+    background-size: 1200px 750px;
+    width: 1200px;
+    height: 750px;
+    background-size: cover;
+    position: absolute;
+    /*一定要设置position:absolute,这样才能设置z-index，让背景处于内容的下一层*/
+    top: auto;
+    left: auto;
+}
+
+#register {
+    width: 472.8px;
+    height: 519.6px;
+    position: relative;
+    left: 705px;
+    /*top: -635px;*/
+    top: 115.2px;
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+}
+
+#tit {
+    font-size: 24px;
+    color: #ff9800;
+    font-family: 'Microsoft Yahei';
+    line-height: 3;
+    text-align: center;
+    margin: 0;
+}
+
+#register .inp {
+    padding: 0 0 0 0px;
+    width: 348px;
+    height: 38px;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #484444;
+    border: 1px solid #d0cdc7;
+    margin-left: -13px;
+}
+
+#register .row p {
+    text-align: right;
+    position: relative;
+    left: -2px;
+    top: 10px;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #484444;
+}
+
+#register .inp1 {
+    padding: 0 0 0 0px;
+    width: 138px;
+    height: 38px;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #484444;
+    border: 1px solid #d0cdc7;
+    margin-left: -13px;
+}
+
+#register .btn {
+    display: inline-block;
+    padding: 0 0 0 0px;
+    width: 87.6px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    color: #fff;
+    background: #ff9800;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    top: 0px;
+}
+
+#dataBtn {
+    cursor: pointer;
+}
+
+#register .btn.on {
+    color: #484444;
+    background-color: #bebbb5;
+    /*cursor: default;*/
+}
+
+#user_icon {
+    position: absolute;
+    top: 96px;
+    left: 87%;
+}
+
+#passwd_icon {
+    position: absolute;
+    top: 160px;
+    left: 87.8%;
+}
+
+#register a {
+    text-decoration: underline #ff9800;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #ff9800;
+}
+
+#register span {
+    margin: -8px 18px;
+}
+
+#register .row .read {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #484444;
+    position: relative;
+    top: -7px;
+    text-align: center;
+    left: -82px;
+    margin: 0;
+}
+
+#btn0 button {
+    padding: 0 0 0 0px;
+    width: 100px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-family: 'Microsoft Yahei';
+    font-size: 24px;
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    left: 116px;
+    margin: 10px auto;
+}

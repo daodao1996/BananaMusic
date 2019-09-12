@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布拿拿音乐</title>
+	<link rel="icon" href="./img/icon_logo.png">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="./js/suggest.js"></script>
+	<link rel="stylesheet" href="./css/content.css"/>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<style>
+		.my-container{
+			width: 1000px;
+			margin:0 auto;
+			text-align: center;
+			background-color: #fffffa;
+		}
+		.item{
+			margin-left: 45px;
+			margin-top: 20px;
+			width: 1000px;
+			height: 145px;
+			position: relative;
+			text-align: center;
+		}
+		.item img{
+			float: left;
+			margin:20px;
+		}
+		.special-left{
+			margin-left:100px;
+			margin-right:100px;
+		}
+		a{color: #484444}
+		a:hover{color: #484444}
+		a:link{text-decoration:none;}
+		a:visited{text-decoration:none;}
+		a:hover{text-decoration:none;color: #ff9800;}
+		a:active{text-decoration:none;}
+		.newsong:hover{color: #484444 !important;transform:scale(1.1);}
+
+		.hi{
+			/*text-overflow:ellipsis;*/
+			overflow:hidden;
+			width: 146px;
+			height: 16px;
+			margin-left: 21px;
+		}
+	</style>
+
+	<script>
+
+	let BASE_URL="http://bananamusic.s1.natapp.cc";//"http://127.0.0.1:9696";
+
+		window.onload=function(){newajax()}
+		function goDetail(songmid) {
+		    console.log(songmid);
+			window.location.href=BASE_URL+"/songDetail.html?songmid="+songmid;
+        }
+	function creat_list2(list2){
+   let str=`<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+<div class="carousel-inner" role="listbox">
+
+	<div class="item active">
+		<div style="float: left;position:relative;text-align: center;">
+		<a href="${BASE_URL}/songDetail.html?songmid=${list2[0].songmid}" target="_parent"><img class="special-left newsong"  src="${list2[0].song_pic}"width="146px" height="146px"><p class="hi">${list2[0].songname}</p><p class="hi">${list2[0].singer_name}</p></a><a onMouseover()></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[1].songmid}" target="_parent"><img class="newsong" src="${list2[1].song_pic}"width="146px" height="146px"><p class="hi">${list2[1].songname}</p><p class="hi">${list2[1].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[2].songmid}" target="_parent"><img class="newsong" src="${list2[2].song_pic}"width="146px" height="146px"><p class="hi">${list2[2].songname}</p><p class="hi">${list2[2].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[3].songmid}" target="_parent"><img class="newsong" src="${list2[3].song_pic}"width="146px" height="146px"><p class="hi">${list2[3].songname}</p><p class="hi">${list2[3].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[4].songmid}" target="_parent"><img class="newsong" class="special-right" src="${list2[4].song_pic}"width="146px" height="146px"><p class="hi">${list2[4].songname}</p><p class="hi">${list2[4].singer_name}</nobr></p></a></div>
+		
+	</div>
+	<div class="item">
+		<div style="float: left;			text-align: center;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[5].songmid}" target="_parent"><img class="special-left newsong" src="${list2[5].song_pic}"width="146px" height="146px"><p class="hi">${list2[5].songname}</p><p class="hi">${list2[5].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[6].songmid}" target="_parent"><img class="newsong" src="${list2[6].song_pic}"width="146px" height="146px"><p class="hi">${list2[6].songname}</p><p class="hi">${list2[6].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[7].songmid}" target="_parent"><img class="newsong" src="${list2[7].song_pic}"width="146px" height="146px"><p class="hi">${list2[7].songname}</p><p class="hi">${list2[7].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[8].songmid}" target="_parent"><img class="newsong" src="${list2[8].song_pic}"width="146px" height="146px"><p class="hi">${list2[8].songname}</p><p class="hi">${list2[8].singer_name}</p></a></div>
+		<div style="float: left;">
+			<a href="${BASE_URL}/songDetail.html?songmid=${list2[9].songmid}" target="_parent"><img class="newsong" class="special-right" src="${list2[9].song_pic}"width="146px" height="146px"><p class="hi">${list2[9].songname}</p><p class="hi">${list2[9].singer_name}</p></a></div>
+</div>
+	<a class="" href="#carousel-example-generic" role="button" data-slide="prev"style="position: relative; top: -60px;left: -954px">
+		<span class="glyphicon glyphicon-chevron-left"style="color: #c3c3be" ></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="" href="#carousel-example-generic" role="button" data-slide="next" style="position: relative; top: -80px;">
+		<span class="glyphicon glyphicon-chevron-right" style="color: #c3c3be"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+</div>
+</div>`;
+  
+   $("#container").html(str)
+}
+function newajax(){
+    $.ajax({
+        type:"GET",
+        url:BASE_URL+"/newsong.html/newsong",
+        datatype:"JSON",
+        crossDomain:true,
+        success:function(result){creat_list2(result);}
+    })
+}
+
+	</script>
+</head>
+<body style="width: 1000px;background-color: #fffffa">
+
+	<div id="container" class="my-container">
+
+	</div>
+</body>
+</html>

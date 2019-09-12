@@ -1,0 +1,85 @@
+body {
+  font-size: 14px;
+}
+div,
+ul,
+p,
+li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#div-container {
+  top: 20px;
+  left: 20px;
+  overflow-y: scroll;
+  height: 300px;
+}
+#div-container #div-addMusicList #img-add {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+#div-container #div-addMusicList #p-title {
+  display: inline-block;
+  left: 10px;
+}
+#div-container #div-addMusicList * {
+  cursor: pointer;
+}
+#div-container .div-blank {
+  width: 100%;
+  height: 15px;
+  display: block;
+}
+#div-container #div-bottom {
+  height: 200px;
+}
+#div-container .div-content {
+  top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+#div-container .div-content img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+#div-container .div-content ul {
+  top: 0px;
+  display: inline-block;
+}
+#div-container .div-content ul li {
+  list-style: none;
+  padding-bottom: 5px;
+  top: -1px;
+}
+#div-musicList-0 ul{
+  color: #ff9800;
+}
+.div-background {
+  background: url('../img/changpian.PNG');
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  display: inline-block;
+}
+
+#img-favor {
+  opacity: 0.8;
+  display: inline-block;
+}
+.div-content *{
+  vertical-align: top;
+}
+
+body .layer-add .layui-layer-btn .layui-layer-btn1 {
+  background: #ff9800;
+  color: white !important;
+}
+
+body .layer-add .layui-layer-btn .layui-layer-btn0 {
+  background: #ff9800;
+  color: white !important;
+  border: 0px;
+}

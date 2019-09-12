@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="./js/suggest.js"></script>
+  <link rel="stylesheet" href="./css/content.css"/>
+  <title>布拿拿音乐</title>
+  <link rel="icon" href="./img/icon_logo.png">
+  <link rel="stylesheet" href="css/mymusic-not_logged.css">
+  <style>
+    #foot-div {
+      height: 100px;
+      /*width: 100%;*/
+      background-color: #f4f3f2;
+      padding-top: 24px;
+      /*margin: 0 auto;*/
+      text-align: center;
+      margin:0 auto;
+      width:1200px;
+      font-size: 14px;
+      color: #2c2c2b;
+    }
+
+    #foot-div p {
+      width: 100%;
+      margin-top: 0px;
+    }
+    a:hover{
+      color:#ff9800
+    }
+  </style>
+</head>
+
+<body onload="j()">
+  <div id="nav">
+    <ul>
+      <li id="nav-logo" onclick="jump('mainPage')"><img src="img/logo.png"/></li>
+      <li class="nav-item" id="nav-mainpage"><p class="pnav">首页</p></li>
+      <li class="nav-item" id="nav-singer"><p class="pnav">歌手</p></li>
+      <li class="nav-item" id="nav-music"><p class="pnav">歌单</p></li>
+      <li class="nav-item" id="nav-mymusic" ><p class="pnav">我的音乐</p></li>
+      <li id="nav-search"><input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/><img id="nav-search-icon" src="img/search.png"/></li>
+      <li id="nav-login"><a href="login.html"><p>登录</p></a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="bg">
+        <p>私人音乐空间，听我想听的歌</p>
+        <div id="btn_login">
+           <input type="button" value="立即登录">
+        </div>
+    </div>
+  </div>
+
+  <div id="foot-div">
+    <p style="margin-top:0px;">
+      <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+    </p>
+    <p>布拿拿音乐版权所有© 2018</p>
+  </div>
+
+  </div>
+
+
+</body>
+<script type="text/javascript">
+    let BASE_URL="http://bananamusic.s1.natapp.cc";//"http://127.0.0.1:9696";
+
+  function j(){
+   if(sessionStorage.getItem("username"))
+       window.location.href=BASE_URL+"/mymusic.html";
+  }
+
+    $("#nav-logo").click(function () {
+        window.location.href=BASE_URL+"/mainPage.html";
+    });
+
+    $("#nav-mainpage").click(function () {
+        window.location.href=BASE_URL+"/mainPage.html";
+    });
+
+    $("#nav-singer").click(function () {
+        window.location.href=BASE_URL+"/singer.html";
+    });
+
+    $("#nav-music").click(function () {
+        window.location.href=BASE_URL+"/playlist.html";
+    });
+
+
+  $("#btn_login>input").click(function () {
+      window.location.href=BASE_URL+"/login.html";
+  });
+
+  $("#nav-search img").click(function (){
+      let text =document.getElementById("keyword0");
+      if(text.value!="") {
+          window.location.href = encodeURI(BASE_URL + '/searchResult.html?keyword=' + text.value);
+      }
+  });
+</script>
+<script src="layer/layer.js"></script>
+</html>

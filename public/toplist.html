@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        tr{height: 40px;vertical-align: middle}
+        td{text-indent: 5%;width: 33.3%}
+        a{color:#484444}
+        a:link{text-decoration:none; color:#484444;}
+        a:visited{text-decoration:none;}
+        a:hover{text-decoration:none;color: #ff9800;}
+        a:active{text-decoration:none;}
+    </style>
+    <script>
+    
+let BASE_URL="http://bananamusic.s1.natapp.cc";//"http://127.0.0.1:9696";
+    window.onload=function(){listajax()};
+
+function creat_list4(list4){
+    let str=`       <div  style="position: relative;top: 50px;left: 0px;float: left;width: 30%;margin-left: 0px;">
+                <a href="${BASE_URL}/top.html?listName=${list4[0]['listName']}" target="_parent">
+                    <div style="clear: both;">
+                  <img  src="${list4[0]['toplist_pic']}" alt="" style="width: 115px;height: 115px; float: left; margin-left: 50px">
+                </div>
+                    <div style="float: left;">
+                    <div style="position: relative;left: 10px;font-size: 16px;top:50px;">${list4[0]['listName']}</div>
+                    </div>
+                </a>
+                </div>
+
+                <div  style="position: relative;top: 50px;left: 0px;float: left;width: 30%;margin-left: 0px;">
+                <a href="${BASE_URL}/top.html?listName=${list4[1]['listName']}" target="_parent">
+                        <div style="clear: both;">
+                      <img  src="${list4[1]['toplist_pic']}" alt="" style="width: 115px;height: 115px; float: left; margin-left: 80px">
+                    </div>
+                        <div style="float: left;">
+                        <div style="position: relative;left: 10px;font-size: 16px;top:50px;">${list4[1]['listName']}</div>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div  style="position: relative;top: 50px;left: 0px;float: left;width: 30%;margin-left: 0px">
+                    <a href="${BASE_URL}/top.html?listName=${list4[2]['listName']}" target="_parent">
+                            <div style="clear: both;">
+                          <img  src="${list4[2]['toplist_pic']}" alt="" style="width: 115px;height: 115px; float: left; margin-left: 110px">
+                        </div>
+                            <div style="float: left;">
+                            <div style="position: relative;left: 235px;font-size: 16px;top:-67px;">${list4[2]['listName']}</div>
+                            </div>
+                        </a>
+                        </div>`;
+
+    $("#tlist").html(str)
+}
+
+function creat_list3(list3){
+        let str="";
+        for(let i=0;i<10;i++){
+                    if(i%2==1){
+                    let num=parseInt(i)+1;
+                    str=str+`<tr class="active">
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[0]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[0]["songlist"][i].songname}</a></td>
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[1]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[1]["songlist"][i].songname}</a></td>
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[2]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[2]["songlist"][i].songname}</a></td>
+                    </tr>`;
+            }
+                    else{
+                    let num=parseInt(i)+1;
+                    str=str+`<tr class="">
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[0]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[0]["songlist"][i].songname}</a></td>
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[1]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[1]["songlist"][i].songname}</a></td>
+                    <td ><a href="${BASE_URL}/songDetail.html?songmid=${list3[2]["songlist"][i].songmid}" target="_parent" style="color: #484444"><p style="display: inline;color: #ff9800">`+num+`</p>&nbsp;&nbsp;${list3[2]["songlist"][i].songname}</a></td>
+                    </tr>`}
+        }
+        str=str+` <tr class="active">
+                <td style="text-align: end"><a href="${BASE_URL}/top.html?listName=${list3[0].listName}" target="_parent"> 查看全部&gt;</a></td>
+                <td style="text-align: end"><a href="${BASE_URL}/top.html?listName=${list3[1].listName}" target="_parent"> 查看全部&gt;</a></td>
+                <td style="text-align: end"><a href="${BASE_URL}/top.html?listName=${list3[2].listName}" target="_parent"> 查看全部&gt;</a></td>
+            </tr>`;
+
+        $("#listtable").html(str)
+    }
+    function listajax(){
+    $.ajax({
+        type:"GET",
+        url:BASE_URL+"/toplist.html/toplist",
+        datatype:"JSON",
+        crossDomain:true,
+        success:function(result){
+            creat_list3(result);
+            creat_list4(result);}
+    })
+}
+
+    </script>
+</head>
+<body style="background-color: #fffffa">
+    <div id="tlist" ></div>
+    <table class="table" style="position:relative;top: 80px;">
+        <tbody  id="listtable">
+  <!-- 这里动态加载歌单 -->
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+   

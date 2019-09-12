@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<script type="text/javascript" src="./js/jsTool/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="./js/jsTool/layer/layer.js"></script>
+<link rel="stylesheet" href="css/myMusic-musicList.css">
+<style>
+    .div-background {
+        background: url('./img/changpian.PNG');
+        height: 40px;
+        width: 40px;
+        background-size: contain;
+        display: inline-block;
+    }
+
+    .img-favor {
+        opacity: 0.8;
+        display: inline-block;
+    }
+    .div-collapse-content *{
+        vertical-align: top;
+    }
+    #div-backgroundBig{
+        height: 200px;
+        width: 200px;
+    }
+    /*#middle-div{*/
+        /*display: none;*/
+    /*}*/
+</style>
+<body>
+<div id="nav">
+    <ul>
+        <li id="nav-logo" onclick="jump('mainPage')"><img src="img/logo.png"/></li>
+        <li class="nav-item" id="nav-mainpage" onclick="jump('mainPage')"><p class="pnav">首页</p></li>
+        <li class="nav-item" id="nav-singer" onclick="jump('singer')"><p class="pnav">歌手</p></li>
+        <li class="nav-item" id="nav-music" onclick="jump('myMusic-musicList')"><p class="pnav">歌单</p></li>
+        <li class="nav-item" id="nav-mymusic" onclick="jump('myMusic-userConfig')"><p class="pnav">我的音乐</p></li>
+        <li id="nav-search"><input type="text" placeholder="搜索歌曲，歌手"/> <a href=""><img id="nav-search-icon"
+                                                                                       src="img/search.png"/></a></li>
+        <li id="nav-login"><p><a href="/login.html">登录</a></p></li>
+    </ul>
+</div>
+<div id="middle-div">
+<div id="middle-div-left" class="container-fluid col-md-4">
+    <div id="div-musicList" class="container-fluid">
+        <div role="button" data-toggle="collapse" href="#collapse" aria-expanded="false"
+             aria-controls="collapseExample" class="div-collapse-top">
+            <div class="div-triangle-collapse"></div>
+            <p id="p-saveMusicList">创建的歌单(</p>
+            <p id="p-musicListAmount">0</p>
+            <p>)</p>
+        </div>
+        <button class="btn btn-primary btn-sm" type="button" id="button-addMusicList">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            <p id="p-addMusicList">&nbsp;添加</p>
+        </button>
+        <div class="div-collapse collapse in" id="collapse">
+            <div class="div-collapse-content" id="div-musicList-0">
+                <input type="hidden" class="musicListid">
+                <div class="div-background">
+                    <img src="img/heart1.png" class="img-musicListCover img-favor">
+                </div>
+                <ul>
+                    <li class="li-musicListName">我喜欢的音乐</li>
+                    <li class="li-musicListSongAmount">0首歌</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="middle-div-right" class="container-fluid col-md-8">
+    <div id="middle-div-right-top">
+        <div id="div-musicListCover">
+            <div class="div-background" id="div-backgroundBig">
+                <img src="img/heart1.png" class="img-favor">
+            </div>
+        </div>
+        <div id="div-musicListInfo">
+            <ul>
+                <li><img src="img/tag.png" id="img-musicListTag">
+                    <p id="p-musicListName">我喜欢的音乐</p>
+                    <button class="btn btn-primary btn-sm" type="button" id="button-shareMusicList">
+                        <img src="img/share1.png" id="img-musicListShare">
+                        <p id="p-shareMusicList">&nbsp;分享</p>
+                    </button>
+                    <br></li>
+                <li><img id="img-userIcon" src="img/user.png" width="40px" height="40px">
+                    <p class="p-create-info" id="p-ownerName">ZAT</p>
+                    <input type="hidden" id="accountCreateTime">
+                    <p class="p-create-info" id="p-createTime">2018-06-13 创建</p></li>
+                <li>
+                    <div id="div-musicList-intro">
+                        <p id='p-textarea'>说点什么吧</p>
+                        <img src="img/edit2.png" id="img-editMusicListIntro">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="middle-div-right-middle">
+        <p class="p-title">歌曲列表</p>
+        <p class="p-title p-amount" id="p-musicAmount">0首歌</p>
+        <table id="t1" cell-spacing='0'>
+            <thead>
+            <th id="th1"></th>
+            <th id="th2">歌曲</th>
+            <th id="th3">歌手</th>
+            <th id="th4">时长</th>
+            <th id="th5"></th>
+            </thead>
+            <tbody class="table-data">
+
+            </tbody>
+        </table>
+        <div id="div-noMusic">现在还没有音乐哦 <a href="/mainPage.html">去添加</a></div>
+    </div>
+    <div id="middle-div-right-bottom">
+        <p class="p-title">评论</p>
+        <p class="p-title p-amount" id="p-remarkAmount">共0条评论</p>
+        <hr>
+        <div id="div-remarkContent">
+
+        </div>
+    </div>
+
+</div>
+</div>
+<script src="js/myMusic-musicList2.js"></script>
+</body>
+</html>

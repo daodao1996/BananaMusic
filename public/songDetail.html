@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+  <link rel="stylesheet" href="css/songDetail.css" />
+  <link rel="stylesheet" href="css/comment.css"/>
+  <link rel="stylesheet" href="css/audio.css">
+  <link rel="stylesheet" href="css/page1.css">
+  <script type=" application/x-javascript" src="js/page.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type=" application/x-javascript" src="js/showMusicDetailMessage.js"></script>
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+    <!--<script src="./js/" type=" application/x-javascript"></script>-->
+    <style>
+        #foot-div {
+            height: 100px;
+            /*width: 100%;*/
+            background-color: #f4f3f2;
+            padding-top: 24px;
+            /*margin: 0 auto;*/
+            text-align: center;
+            margin:0 auto;
+            width:1200px;
+            font-size: 14px;
+            color: #2c2c2b;
+        }
+
+        #foot-div p {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+  <div id="nav">
+    <ul>
+    <li id="nav-logo" onclick="jumpMainpage()"><img src="img/logo.png" /></li>
+      <li class="nav-item" id="nav-mainpage" onclick="jumpMainpage()"><p class="pnav">首页</p></li>
+      <li class="nav-item" id="nav-singer" onclick="jumpSinger()"><p class="pnav">歌手</p></li>
+      <li class="nav-item" id="nav-music" onclick="jumpPlaylist()"><p class="pnav">歌单</p></li>
+      <li class="nav-item" id="nav-mymusic" onclick="jumpMymusic()"><p class="pnav">我的音乐</p></li>
+      <li id="nav-search"><input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+          <img id="nav-search-icon" src="img/search.png" onclick="jumpSearchResult()"/></li>
+      <li id="nav-login"><a href="login.html"><p style="font-size: 18px;">登录</p></a></li>
+    </ul>
+  </div>
+
+  <div id="middle-div">
+  <!-- 简介-->
+    <div class="middle_top">
+
+</div>
+
+<!-- 歌词及简介推荐 -->
+<div id="modile_middle">
+  <div id="lyric">
+    <h2 class="lyric_name">歌词</h2>
+    <span id="lyric_1">
+     
+</span>
+<span id="lyric_2">
+       
+    </span>
+    <div class="openlyric" onclick="openLyric()">
+      [展开]
+    </div>
+    <div class="closelyric" onclick="closeLyric()">
+        [收起]
+      </div>
+      <div id="no_lyric" algin="middle">
+        <span class="nothavelyric">
+        暂无歌词!
+        </span>
+        <div class="addLyric" onclick="addLyric()">
+          填充歌词
+        </div>
+        <div class="writeLyric">
+          <textarea id="lyrictextarea">
+          </textarea>
+          <button class="addLyricButton" onclick="wantToaddLyric()">添加</button>
+          <button class="downLyric" onclick="downLyric()">取消</button>
+        </div>
+      </div>
+  </div>
+  <div id="introduce">
+  
+  </div>
+  <div id="similar_recommendation">
+    <!-- <h2 class="lyric_name">相似推荐</h2>
+    <ul class="similar_1" >
+      <li><img src="../../img/SongDetail/相似推荐.png">
+      <span class="similar_2"><a href="#">如果我是一首歌</a></span></li>
+      <li><img src="../../img/SongDetail/相似推荐1.png"><span class="similar_2"><a href="#">成都</a></span></li>
+      <li><img src="../../img/SongDetail/相似推荐2.png"><span class="similar_2"><a href="#">终于我们</a></span></li>
+    </ul> -->
+  </div>
+</div>
+
+  </div>
+
+<!-- 播放 -->
+<div id="play_song" style="z-index: 999; position: absolute;">
+  <div class="audio-box">
+		<div class="audio-container">
+			<div class="audio-cover"></div>
+			<div class="audio-view">
+				<h3 class="audio-title">未知歌曲</h3>
+				<div class="audio-body">
+					<div class="audio-backs">
+						<div class="audio-this-time">00:00</div>
+						<div class="audio-count-time">00:00</div>
+						<div class="audio-setbacks">
+							<i class="audio-this-setbacks">
+								<span class="audio-backs-btn"></span>
+							</i>
+							<span class="audio-cache-setbacks">
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="audio-btn">
+					<div class="audio-select">
+						<div class="audio-prev"></div>
+						<div class="audio-play"></div>
+						<div class="audio-next"></div>
+						<div class="audio-menu"></div>
+						<div class="audio-volume"></div>
+					</div>
+					<div class="audio-set-volume">
+						<div class="volume-box">
+							<i><span></span></i>
+						</div>
+					</div>
+					<div class="audio-list">
+						<div class="audio-list-head">
+							<p>☺随心听</p>
+							<span class="menu-close">关闭</span>
+						</div>
+						<ul class="audio-inline">
+						</ul>
+					</div>
+				</div>
+			</div>
+    </div>
+    <script type="text/javascript" src="js/audio.js"></script>
+</div>
+</div>
+
+<!-- 评论 -->
+<div id="comment_div"  >
+<div id="comment" >
+    <div id="main_comment">
+        <p class="lyric_name">评论<span class="count_comment">共11232条评论</span></p>
+        <textarea style="z-index: -999;" placeholder="期待你的评论......" class="comment_write" onkeyup="commentCoun()" id="commentContent"></textarea><span class="count_comment_1">剩余<span class="count" id="commentcount">300</span>字</span>
+        <p class="pubic_commet"><button id="commit_comment" onclick="publicMessage()">发表评论</button><img src="img/笑脸.png"></p>
+    </div>
+    <div id="wonderful_comment">
+       
+  </div>
+  <ul class="page" id="page"></ul>
+  </div>
+</div>
+
+  
+      <div id="footer">
+          <div id="foot-div">
+              <p style="margin-top:0px;">
+                  <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+              </p>
+              <p>布拿拿音乐版权所有© 2018</p>
+          </div>
+      </div>
+  <script src="layer/layer.js"></script>
+  <link rel="stylesheet" href="css/save.css">
+</body>
+<script src="layer/layer.js"></script>
+</html>

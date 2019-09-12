@@ -1,0 +1,457 @@
+/*把下面两行中的nav-*修改成自己的即可*/
+#nav-mymusic {
+    background-color: #ff9800;
+}
+
+#nav-mymusic p {
+    color: #fffffa;
+}
+
+/*共通*/
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    background-color: #fffffa;
+}
+
+li {
+    list-style: none;
+}
+
+iframe {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #484444!important;
+}
+
+#nav-mymusic {
+    width: 12%;
+}
+
+#nav-mymusic p {
+    width: 84px;
+}
+
+#nav {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fffffa;
+
+}
+
+#nav > ul {
+    height: 80px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+.nav-item {
+    height: 80px;
+    width: 8%;
+    margin-top: 0px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-item p {
+    font-size: 20px;
+    color: #343433;
+    font-family: 'Microsoft Yahei';
+    height: 22.25px;
+    width: 42px;
+    margin: 28.875px auto;
+}
+
+#nav-logo {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 40px;
+    float: left;
+    width: 14%;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+#nav-search {
+    margin-left: 15%;
+    width: 22%;
+    margin-top: 30px;
+    height: 30px;
+    float: left;
+    padding: 0;
+    line-height: normal!important;
+}
+
+#nav-search-icon {
+    position: absolute;
+    top: 54px;
+    left: 88%;
+}
+
+#nav-search input {
+    padding: 0 0 0 5px;
+    float: left;
+    width: 100%;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 2px solid #a8a8a8;
+}
+
+#nav-login {
+    margin-left: 5%;
+    width: 5%;
+    height: 25px;
+    float: left;
+    margin-top: 30px;
+}
+
+#nav-login p {
+    font-size: 18px;
+    margin: 0;
+}
+#middle-div {
+    display: block;
+    width: 1200px;
+    /*border: 2px #eda893 solid;*/
+    /*height: 796px;*/
+    margin: 0 auto;
+}
+body .layer-add .layui-layer-btn .layui-layer-btn1 {
+    background: #ff9800;
+    color: white!important;
+}
+
+body .layer-add .layui-layer-btn .layui-layer-btn0 {
+    background: #ff9800;
+    color: white!important;
+    border: 0px;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft Yahei';
+  color: #333;
+  line-height: 20px;
+}
+#middle-div p,
+#middle-div div,
+#middle-div a,
+#middle-div ul {
+  padding: 0;
+  margin: 0;
+}
+#middle-div p {
+  display: inline-block;
+}
+#middle-div li {
+  list-style: none;
+  padding-top: 5px;
+}
+#middle-div a {
+  text-decoration: none;
+  color: #333;
+}
+#middle-div a:hover {
+  color: #ff9800;
+  text-decoration: none;
+}
+#middle-div ul {
+  display: inline-block;
+}
+#middle-div div {
+  position: relative;
+}
+#middle-div hr {
+  margin: 0 0 30px 0 !important;
+  height: 2px !important;
+  width: 100%;
+  background-color: #eda893 !important;
+}
+#middle-div #middle-div {
+  width: 1200px;
+  margin: 0 auto;
+}
+#middle-div #middle-div-right {
+  top: 40px;
+}
+#middle-div #middle-div-left {
+  top: 50px;
+}
+#middle-div #middle-div-left hr {
+  position: relative;
+  top: 50px;
+}
+#middle-div #middle-div-left #div-musicList {
+  margin: 0 auto;
+  position: relative;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse-top {
+  display: inline-block;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse-top .div-triangle-collapse {
+  border: 6px solid;
+  border-color: #333 #fff #fff #fff;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  top: 3px;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse-top p {
+  font-size: 1.3em;
+  color: #333;
+}
+#middle-div #middle-div-left #div-musicList #button-addMusicList {
+  background-color: #ff9800;
+  paddding: 2px 6px !important;
+  border-color: #ffd699;
+  position: relative;
+  left: 35%;
+  top: -3px;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse {
+  width: 100%;
+  left: 7%;
+  top: 20px;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content {
+  width: 100%;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content p {
+  position: relative;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content ul {
+  position: relative;
+  top: -7px;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content .div-collapse-musicListOperation {
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse .div-collapse-content .div-collapse-musicListOperation img {
+  height: 12px;
+  width: 12px;
+  display: none;
+  cursor: pointer;
+}
+#middle-div #middle-div-left #div-musicList #div-savedMusicList {
+  top: 30px;
+}
+#middle-div #middle-div-left #div-musicList .div-collapse-content-2 {
+  top: 30px;
+}
+#middle-div #middle-div-right-top {
+  vertical-align: top;
+}
+#middle-div #middle-div-right-top #div-musicListCover {
+  position: absolute;
+  height: 206px;
+  width: 206px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  display: inline-block;
+  top: 10px;
+}
+#middle-div #middle-div-right-top #div-musicListCover div {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+}
+#middle-div #middle-div-right-top #div-musicListCover img{
+    height: 100%;
+    width: 100%;
+}
+#middle-div #middle-div-right-top #div-musicListInfo {
+  width: 60%;
+  height: 210px;
+  display: inline-block;
+  left: 35%;
+  top: -10px;
+}
+
+#middle-div #middle-div-right-top #div-musicListInfo ul {
+  width: 100%;
+  position: relative;
+  top: 7px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li {
+  margin-bottom: 8px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li #p-musicListName {
+  font-size: 1.2em;
+  position: relative;
+  top: 2px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li #button-shareMusicList {
+  background-color: #ff9800;
+  paddding: 2px 6px !important;
+  border-color: #ffd699;
+  position: absolute;
+  left: 86%;
+  top: 0px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li #button-shareMusicList #p-shareMusicList {
+  position: relative;
+  top: 1px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li img {
+  cursor: pointer;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li div {
+  height: 130px;
+  width: 100%;
+  border: 1px solid #f39a46;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #bcbaba;
+  padding: 5px;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li div img {
+  height: 25%;
+  position: absolute;
+  top: 71%;
+  left: 92%;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li * {
+  display: inline-block;
+}
+#middle-div #middle-div-right-top #div-musicListInfo ul li #p-createTime {
+  position: relative;
+  left: 20%;
+}
+#middle-div #middle-div-right-top #div-musicListInfo #p-textarea {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#middle-div #middle-div-right-middle {
+  margin: 60px 0;
+  min-height: 200px;
+}
+#middle-div #middle-div-right-middle table {
+  width: 100%;
+}
+#middle-div #middle-div-right-middle table tr,
+#middle-div #middle-div-right-middle table td {
+  height: 30px;
+}
+#middle-div #middle-div-right-middle table td {
+  padding-left: 15px !important;
+  color: #333;
+}
+#middle-div #middle-div-right-middle table td .img-deleteIcon {
+  cursor: pointer;
+}
+#middle-div #middle-div-right-middle table th {
+  padding-left: 10px !important;
+  height: 35px;
+  border: 1px solid #eda893;
+  border-right: 0;
+  border-top: 2px solid #eda893;
+  text-align: left;
+  font-size: 1.2em;
+  color: #666;
+}
+#middle-div #middle-div-right-middle table #th1 {
+  width: 10.3%;
+  border-left: 0;
+}
+#middle-div #middle-div-right-middle table #th2 {
+  width: 41.7%;
+}
+#middle-div #middle-div-right-middle table #th3 {
+  width: 23.5%;
+}
+#middle-div #middle-div-right-middle table #th4 {
+  width: 16.5%;
+}
+#middle-div #middle-div-right-middle table #th5 {
+  width: 8%;
+}
+#middle-div #middle-div-right-middle table .p-num {
+  position: relative;
+  top: 1px;
+  left: -5px;
+}
+#middle-div #middle-div-right-middle #div-noMusic {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+#middle-div #middle-div-right-middle #div-noMusic a:hover{
+  color: #ff9800!important;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul {
+  width: 80%;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li {
+  padding: 0 0 3px 0;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li * {
+  display: inline-block;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li .span-uname {
+  font-size: 1.2em;
+  color: #ff9800;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li .p-replayContent,
+#middle-div #middle-div-right-bottom #div-remarkContent ul li .p-remarkContent {
+  width: 100%;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li .div-remarkOperation {
+  position: absolute;
+  left: 75%;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent ul li .div-remarkOperation * {
+  cursor: pointer;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent .div-remark {
+  font-size: 1em;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 15px;
+}
+#middle-div #middle-div-right-bottom #div-remarkContent .img-remark {
+  vertical-align: top;
+  height: 40px;
+  width: 40px;
+}
+#middle-div .p-title {
+  font-size: 1.7em;
+  color: #ff9800;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+}
+#middle-div .p-amount {
+  font-size: 1em;
+  position: relative;
+  left: 50px;
+  margin: 20px 0;
+}

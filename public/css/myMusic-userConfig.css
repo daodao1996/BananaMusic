@@ -1,0 +1,207 @@
+/*把下面两行中的nav-*修改成自己的即可*/
+#nav-mymusic {
+    background-color: #ff9800;
+}
+
+#nav-mymusic p {
+    color: #fffffa;
+}
+
+/*共通*/
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    background-color: #fffffa;
+}
+
+li {
+    list-style: none;
+}
+
+iframe {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+}
+
+/*a {
+    text-decoration: none;
+    color: #484444 !important;
+}*/
+a:link{text-decoration:none;color: #484444 !important;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;color: #ff9800;}
+a:active{text-decoration:none;}
+
+#nav-mymusic {
+    width: 12%;
+}
+
+#nav-mymusic p {
+    width: 84px;
+}
+
+#nav {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fffffa;
+}
+
+#nav > ul {
+    height: 80px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+.nav-item {
+    height: 80px;
+    width: 8%;
+    margin-top: 0px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav-item p {
+    font-size: 20px;
+    color: #343433;
+    font-family: 'Microsoft Yahei';
+    height: 22.25px;
+    width: 42px;
+    margin: 28.875px auto;
+}
+
+#nav-logo {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 40px;
+    float: left;
+    width: 14%;
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+#nav-search {
+    margin-left: 15%;
+    width: 22%;
+    margin-top: 30px;
+    height: 30px;
+    float: left;
+    padding: 0;
+}
+
+#nav-search-icon {
+    position: absolute;
+    top: 54px;
+    left: 88%;
+}
+
+#nav-search input {
+    padding: 0 0 0 5px;
+    float: left;
+    width: 100%;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 2px solid #a8a8a8;
+}
+
+#nav-login {
+    margin-left: 5%;
+    width: 5%;
+    height: 25px;
+    float: left;
+    margin-top: 30px;
+}
+
+#nav-login p {
+    font-size: 18px;
+    margin: 0;
+    color:#484444;
+}
+#nav-login p :hover{
+    color:#ff9800;
+}
+
+#middle-div {
+    display: block;
+    width: 1200px;
+    border: 2px #eda893 solid;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+#div-footer {
+    width: 1200px;
+    background-color: #f4f3f2;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 0px;
+
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+    line-height: 20px;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    margin: 30px 0 !important;
+    height: 2px !important;
+    width: 100%;
+    background-color: #eda893 !important;
+}
+
+#container {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#container #div-middle-top {
+    font-size: 2em;
+    color: #ff9800;
+}
+
+#container #div-middle-content select {
+    width: 95px;
+}
+
+#container #div-middle-content .form-group {
+    margin-top: 30px !important;
+}
+
+#container #div-middle-content .control-label {
+    text-align: left !important;
+}
+
+#container #div-middle-content img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+#container #div-middle-content button {
+    margin-top: 20px;
+}
+#changePassword p{
+    font-size: 14px;
+    color: #484444
+}
+#changePassword p:hover{
+    color: #ff9800;
+}
+

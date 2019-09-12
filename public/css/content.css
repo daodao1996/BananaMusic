@@ -1,0 +1,10 @@
+body .layer-add .layui-layer-btn .layui-layer-btn1 {
+    background: #ff9800;
+    color: white!important;
+}
+
+body .layer-add .layui-layer-btn .layui-layer-btn0 {
+    background: #ff9800;
+    color: white!important;
+    border: 0px;
+}

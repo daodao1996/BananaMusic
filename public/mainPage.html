@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <link rel="stylesheet" href="./css/mainPage.css"/>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/mainPage.js"></script>
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+</head>
+<style type="text/css">
+    a:link{text-decoration:none;color:#484444;}
+    a:visited{text-decoration:none;}
+    a:hover{text-decoration:none;color: #ff9800;}
+    a:active{text-decoration:none;}
+ #nav-mainpage{background-color:#ff9800;}
+ #nav-mainpage p{color:#fffffa;}
+ body{height:1000px;width:100%;margin:0;background-color:#fffffa;}
+ li{list-style:none;}
+
+/* a{color: #484444;}*/
+
+ #nav-mymusic{width:12%;}
+ #nav-mymusic p{width:84px;}
+ #nav{width:1200px;height:100px;margin:0 auto;position:relative;background-color:#fffffa;}
+ #nav>ul{height:80px;width:100%;padding: 20px 0 0 0;margin:0;}
+ .nav-item{height:80px;width:8%;margin-top:0px;float:left;cursor:pointer;}
+ .nav-item p{font-size:20px;color:#343433;font-family:'Microsoft Yahei';height:22.25px;width:42px;margin:28.875px auto;}
+ #nav-logo{margin-top:20px;margin-left:0;height:40px;float:left;width:14%;cursor:pointer;margin-right:3%;}
+ #nav-search{margin-left:15%;width:22%;margin-top:30px;height:30px;float:left;}
+ #nav-search-icon{position:absolute;top:56px;left:88.2%;}
+ #nav-search input{padding:0 0 0 5px;float:left;width:100%;height:28px;font-size:14px;border-radius: 4px;border: 2px solid #a8a8a8;}
+ #nav-login{margin-left:5%;width:5%;height:25px;float:left;margin-top:30px;}
+ #nav-login p{font-size:18px;margin:0;color:#484444;}
+ #nav-login p:hover{
+     color:#ff9800;
+ }
+ #middle-div{display:block;width:1200px;margin:0 auto;}
+ .hots:hover{transform:scale(1.1)} 
+ .news:hover{transform:scale(1.1)}
+    .hots p:hover{
+        color:#ff9800;
+    }
+
+
+    #foot-div {
+        height: 100px;
+        /*width: 100%;*/
+        background-color: #f4f3f2;
+        padding-top: 24px;
+        /*margin: 0 auto;*/
+        text-align: center;
+        margin:0 auto;
+        width:1200px;
+        font-size: 14px;
+        color: #2c2c2b;
+    }
+
+    #foot-div p {
+        width: 100%;
+        margin-top: 0px;
+    }
+    body{
+        margin: 0;
+    }
+
+    a{color: #484444 !important}
+    a:hover{color: #484444 !important;text-decoration: none !important}
+</style>
+
+
+<body>
+<div>
+  <div id="nav">
+    <ul>
+    <li id="nav-logo" onclick="jumpMainpage()"><img src="img/logo.png"/></li>
+      <li class="nav-item" id="nav-mainpage" onclick="jumpMainpage()"><p class="pnav">首页</p></li>
+      <li class="nav-item" id="nav-singer" onclick="jumpSinger()"><p class="pnav">歌手</p></li>
+      <li class="nav-item" id="nav-music" onclick="jumpPlaylist()"><p class="pnav">歌单</p></li>
+      <li class="nav-item" id="nav-mymusic" onclick="jumpMymusic()"><p class="pnav">我的音乐</p></li>
+      <li id="nav-search">
+          <input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+          <img id="nav-search-icon" src="img/search.png" onclick="jumpSearchResult()"/>
+      </li>
+      <li id="nav-login"><a href=""><p></p></a></li>
+    </ul>
+  </div>
+
+
+
+
+  <div id="middle-div">
+    <!-- 代码写在这里 -->
+      <div id="dBanner"><iframe src="./banner.html" frameborder="0" width="100%" height="100%" style="position: relative;left: -30px;"></iframe></div>
+      <div id="dHot">
+          <ul id="hotUl">
+              <li><img src="./img/sign.png" alt="" id="picSign1"/></li>
+              <li><h3 id="hot">热门推荐</h3></li>
+              <!--<li><p id="hotClass"><a href="###">华语</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="###">流行</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="###">摇滚</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="###">民谣</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="###">电子</a></p></li>-->
+              <!--<li><a href="###"><p id="hotMore">更多</p></a></li>-->
+              <!--<li id="hotLiArrows"><img src="./img/arrows.png" alt=""/></li>-->
+          </ul>
+          <hr id="hotHr"/>
+          <div id="hotdiv" style="width:1000px;height: 500px;margin-top: 80px">
+            <!--这里动态加载热门推荐-->
+          </div>
+      </div>
+
+      <div id="dNew">
+          <ul id="newUl">
+              <li><a href="###"><img src="./img/sign.png" alt="" id="picSign2"/></a></li>
+              <li id="newLi"><h3 id="new">最新单曲</h3></li>
+
+             <!-- <li><a href="###"><p id="newMore">更多</p></a></li>
+              <li id="newLiArrows"><img src="./img/arrows.png" alt=""/></li>-->
+          </ul>
+          <hr id="newHr" />
+          <div style="text-align: center;height: 270px ">
+              <div style="height: 145px;position: relative;top: 20px">
+                  <!-- 这里动态加载最新单曲 -->
+                  <iframe src="newsong.html" frameborder="0" width="1200px" height="280px" style="position: relative;left: -9px; background-color: #fffffa" ></iframe>
+              </div>
+
+          </div>
+      </div>
+      <div id="dList">
+          <ul class="listUl">
+              <li><a href="###"><img src="./img/sign.png" alt="" id="picSign3"/></a></li>
+              <li id="listLi"><h3 id="list">榜单</h3></li>
+
+              <li><a href="###"><p id="listMore">更多</p></a></li>
+              <li id="listLiArrows"><img src="./img/arrows.png" alt=""/></li>
+          </ul>
+          <hr id="listHr"/>
+            <div id="tlist" style="width: 1000px;height: 200px;">
+
+
+            </div>
+          <div id="table" style="height: 500px;">
+           <iframe  src="toplist.html" frameborder="0" height="140%" width="100%" style="margin-top: -225px;background-color: #fffffa"></iframe>
+          </div>
+      </div>
+
+  </div>
+
+    <div style="position: fixed;right: 20px;bottom: 20px;z-index: 10;">
+
+        <div style="padding-top:20px;padding-right:50px;padding-bottom:50px">
+            <a href="#" style="float: right;" class="btns"><img src="./img/TOP.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+
+<div id="foot-div">
+    <p style="margin-top:0px;">
+        <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+    </p>
+    <p>布拿拿音乐版权所有© 2018</p>
+</div>
+
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 530px;height: 400px;background-color: #fffff6 ">
+            <div class="modal-header"style=" background-color: orange">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"style="color: red">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel" style="color: white">
+                    意见反馈
+                </h4>
+            </div>
+            <div class="modal-body"  style="height: 250px;text-align: center">
+                <form action="">
+                    <p style="padding: 0px;font-size: 14px;position: relative;left: -40px">您有什么想听的音乐或者对产品有任何意见欢迎反馈给我们</p>
+                    <textarea  placeholder="请输入反馈内容" style="width:448px; height:113px;margin-top: 0px;margin-bottom: 0px"></textarea>
+
+                    <textarea placeholder="请留下联系方式" style="width:448px; height:73px;margin-top:30px;margin-bottom: 0px"></textarea>
+                </form>
+            </div>
+
+            <div class="modal-footer"style="position: relative;top: 30px;text-align: center">
+                <button type="button" class="btn btn-primary" style="background-color: #ff9800;border-color: #ff9800;width: 95px;height: 30px">
+                    提交
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"style="background-color: #ff9800;border-color: #ff9800;color: white;width: 95px;height: 30px">
+                    取消
+                </button>
+
+            </div>
+        </div>&lt;!&ndash; /.modal-content &ndash;&gt;
+    </div>&lt;!&ndash; /.modal &ndash;&gt;-->
+
+</body>
+<script src="layer/layer.js"></script>
+</html>

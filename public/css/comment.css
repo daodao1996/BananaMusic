@@ -1,0 +1,284 @@
+#comment{
+    width: 700px;
+    margin-top: 64px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+#main_comment{
+    width:663px;
+    height: 150px;
+    position: relative;
+}
+
+.count_comment{
+    font-size: 12px;
+    color: #7f7e7e;
+    font-family: "微软黑体";
+    margin-left: 10px;
+}
+.count{
+    font-size: 12px;
+    color: #ff9800;
+    font-family: "微软黑体";
+}
+.count_comment_1{
+    width: 67px;
+    height: 20;
+    font-size: 12px;
+    color: #7f7e7e;
+    font-family: "微软黑体";
+    position: absolute;
+    right: 0px;
+    bottom: 7px;
+}
+.count_comment_2{
+    width: 67px;
+    height: 20;
+    font-size: 12px;
+    color: #7f7e7e;
+    font-family: "微软黑体";
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -70px;  
+}
+.comment_write{
+    width: 680px;
+    height: 120px;
+    border-radius: 2px;
+    background: #f5f5f5;
+    font-size: 12px;
+    font-family: "微软黑体";
+    padding-left: 10px;
+    border: none;
+    color: #7f7e7e;
+    outline: none;
+}
+.comment_write_1{
+    width: 600px;
+    height: 120px;
+    border-radius: 2px;
+    background: #f5f5f5;
+    font-size: 12px;
+    font-family: "微软黑体";
+    padding-left: 10px;
+    border: none;
+    color: #7f7e7e;
+    outline: none;
+}
+
+.pubic_commet{
+    width: 680px;
+    height: 40px;
+}
+
+.pubic_commet img{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#commit_comment{
+    float: right;
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background: #ff9800;
+    color: #fffffa;
+    text-align: center;
+    font-size: 14px;
+    font-family: "微软黑体";
+    border: none;
+    margin-top: 5px;
+    outline: none;   
+}
+.commit_comment_1{
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background: #ff9800;
+    color: #fffffa;
+    text-align: center;
+    font-size: 14px;
+    font-family: "微软黑体";
+    border: none;
+    margin-top: 5px;
+    outline: none; 
+    margin-left: 10px;  
+}
+
+.pubic_commet_1{
+    width: 600px;
+    height: 40px;
+}
+.pubic_commet_1 .smail{
+    height: 22px;
+    width: 22px;
+    margin-left: 390px;
+    margin-top: -8px;
+}
+.down_comment_1{
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background: #f3f3f3;
+    color: #484444;
+    text-align: center;
+    font-size: 14px;
+    font-family: "微软黑体";
+    border: none;
+    margin-top: 5px;
+    margin-left: 10px;  
+    outline: none; 
+}
+#wonderful_comment{
+    width: 680px;
+    margin-top: 80px;
+}
+.lyric_name1{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: #50504f;
+}
+
+.comment_1{
+    width: 680px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.comment_1 .photo{
+    width:50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+}
+.user{
+    width: 600px;
+    height: 40px;
+    font-family: "微软黑体";
+    font-size: 14px;
+    color: #50504f;
+    font-weight: bold;  
+}
+.comment_2{
+    font-family: "微软黑体";
+    font-size: 14px;
+    color: #6b6b6b;
+    margin-top: 10px;
+}
+.ret_message{
+    width: 600px;
+    height: 180px;
+    margin-top: 50px;
+    display: none;
+
+}
+#ret_message_ret{
+    background: rgba(204,204,204,0.5);
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.ret_message_show{
+    width: 600px;
+    font-size: 14px;
+
+    color:#6b6b6b;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.ret_message_show img{
+    width:40px;
+    height: 40px;
+    float: left;
+}
+.message1{
+    width:600px;
+    float: left;
+    margin-left: 25px;
+}
+.ret_message_show_1{
+    width:550px;
+    margin-top: 10px;
+    margin-left: 40px;
+    float: left;
+    padding-right: 50px;
+}
+.message1_bottom img{
+    width: 21px;
+    height: 21px;
+}
+#main_commit{
+    width: 680px;
+}
+.data1{
+    font-family: "微软黑体";
+    font-size: 14px;
+    color: #6b6b6b;
+    float: left;
+}
+.img1{
+    margin-left: 340px;
+    float: left;
+}
+.message1_bottom .img3{
+  margin-left: 340px;
+  float: left;
+  width:25px;
+  height:25px;
+  display: none;
+  margin-top:-3px;
+}
+.count_zai{
+    float: left;
+    font-family: "微软黑体";
+    font-size: 14px;
+    color: #6b6b6b;
+    margin-left: 10px;
+}
+.img2{
+    float: right;
+    margin-right: 20px;
+    margin-top:10px;
+}
+
+.more_comment{
+    width:106px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    color: #CECECE;
+    margin-left: 260px;
+    cursor:pointer;
+    margin-top: -10px;
+  
+}
+#more_main_comment{
+    width: 680px;
+    display: none;
+}
+.close_comment{
+    width:106px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    color: #CECECE;
+    margin-left: 260px; 
+    display: none;
+    cursor:pointer;
+}
+.close_comment img{
+    height: 22px;
+    width: 22px;
+}
+.more_comment img{
+    height: 22px;
+    width: 22px;
+} 
+.user_name{
+    font-family: "微软黑体";
+    font-size: 14px;
+    color: #50504f;
+    font-weight: bold;  
+}

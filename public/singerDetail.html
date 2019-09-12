@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>布拿拿音乐</title>
+  <link rel="icon" href="./img/icon_logo.png">
+  <link rel="stylesheet" type="text/css" href="./css/singerDetail.css">
+	<!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/page.css">
+  <script src="./js/suggest.js"></script>
+  <link rel="stylesheet" href="./css/content.css"/>
+  <style>
+    #foot-div {
+      height: 100px;
+      /*width: 100%;*/
+      background-color: #f4f3f2;
+      padding-top: 24px;
+      /*margin: 0 auto;*/
+      text-align: center;
+      margin:0 auto;
+      width:1200px;
+      font-size: 14px;
+      color: #2c2c2b;
+    }
+
+    #foot-div p {
+      width: 100%;
+      margin-top: 0px;
+    }
+
+  </style>
+</head>
+
+<body style="background-color: #fffffa">
+  <div id="nav">
+    <ul>
+      <li id="nav-logo" onclick="jumpMainpage()"><img src="../img/logo.png"/></li>
+      <li class="nav-item" id="nav-mainpage" onclick="jumpMainpage()"><p class="pnav">首页</p></li>
+      <li class="nav-item" id="nav-singer" onclick="jumpSinger()"><p class="pnav">歌手</p></li>
+      <li class="nav-item" id="nav-music" onclick="jumpPlaylist()"><p class="pnav">歌单</p></li>
+      <li class="nav-item" id="nav-mymusic" onclick="jumpMymusic()"><p class="pnav">我的音乐</p></li>
+      <li id="nav-search">
+        <input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+        <img id="nav-search-icon" src="../img/search.png" onclick="jumpSearchResult()"/>  </li>
+      <li id="nav-login"><a href=""><p>登录</p></a></li>
+    </ul>
+  </div>
+
+
+
+  <div id="middle-div" >
+    <div class="no-singer" style="height: 500px;">
+      <p >
+        <img src="img/暂无歌手.png" width="256px;">
+        <a href="">暂无此歌手，点击此处返回</a>
+      </p>
+
+    </div>
+    <div class="my-container">
+      <!-- 		<div class="navigation">
+            导航
+
+          </div> -->
+
+          <div class="intro">
+
+            <!-- 介绍 -->
+            <div class="head-photo"></div>
+            <div class="works">
+              <div class="head-name">
+              </div>
+              <div class="head-detail" id="singer_info">
+                <div class= "singer-intro"></div>
+                <div class="detail-more" align="center">
+                  <a href="javascript:;">更多介绍
+                    <img src="../img/倒三角.png" ></a>
+                    <div class="to-show">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="head-works">
+                  <ul>
+                    <li>
+                      <a href="#song_table" class="songs">单曲</a>
+                      <a href="#song_table" class="song-number" id="song-left"></a>
+
+                    </li>
+                    <li class="song-number">|</li>
+                    <li>
+                      <a href="#album_table" class="songs">专辑</a>
+                      <a href="#album_table" class="song-number" id="song-right"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix">
+
+                </div>
+
+                <div class="head-play">
+                  <div  class="btn-play" align="center">
+                    <a href="">
+                      <img src="../img/播放歌手的歌曲.png">
+                    </a>
+                  </div>
+                  <div  class="btn-follow" align="center" id="followed2">
+                    <a class="a-follow" href="javascript:;" >
+                      <img src="../img/关注.png">
+
+                    </a>
+                  </div>
+                  <div  class="btn-follow followed" align="center" id="followed1">
+                    <a class="a-follow" href="javascript:;" >
+                      <img src="../img/已关注.png">
+
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="song-detail">
+              <div class="chapter-head">
+                单曲
+              </div>
+            </div>
+            <div class="song">
+              <!-- 热门歌曲 -->
+              <div class="chapter-head">
+                热门歌曲
+                <div class="to-more">
+                  <a href="javascript:;" id="song-to-more">更多>></a>
+                </div>
+              </div>
+              <table  class="table song-table" id="song_table" >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>歌曲</th>
+                    <th>专辑</th>
+                    <th>时长</th>
+                  </tr>
+                </thead>
+                <tbody id="song_tbody">
+                </tbody>
+              </table>
+              <div align="center">
+                <ul id="song-page" class="page"></ul>
+              </div>
+            </div>
+
+            <div class="no-album">
+              <div class="chapter-head">
+                专辑
+              </div>
+              <div class="album-line"><hr></div>
+              <div align="center"><img src="../img/NO.png" ></div>
+
+
+              <p align="center">走丢了……</p>
+            </div>
+            <div class="album" id="album_table">
+              <!-- 专辑 -->
+              <div class="chapter-head">
+                <span id="album-head-title">专辑</span>
+                <div class="to-more">
+                  <a href="javascript:;" id="album-to-more" style="display: none">更多>></a>
+                </div>
+              </div>
+              <div class="album-line"><hr></div>
+              <div class="album-list">
+              </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div  align="center">
+              <ul id="album-page" class="page"></ul>
+            </div>
+          </div>
+  </div>
+
+
+  <div id="footer">
+    <div id="foot-div">
+      <p style="margin-top:0px;">
+        <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+      </p>
+      <p>布拿拿音乐版权所有© 2018</p>
+    </div>
+</div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/pageSinger.js"></script>
+  <script type="text/javascript" src="./js/singerDetail.js"></script>
+</body>
+
+<script src="layer/layer.js"></script>
+</html>

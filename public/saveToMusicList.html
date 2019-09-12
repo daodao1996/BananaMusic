@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div id="div-container">
+    <input type="hidden" id="cid">
+    <div id="div-addMusicList">
+        <img src="img/add.png" alt="" height="32px" width="32px" id="img-add">
+        <p id="p-title">新歌单</p> <br>
+    </div>
+    <div id="div-musicList-0" class="div-content">
+        <input type="hidden" class="musicListid">
+        <div class="div-background">
+            <img src="img/heart1.png" class="img-musicListCover" id="img-favor">
+        </div>
+        <ul>
+            <li class="li-musicListName">我喜欢的音乐</li>
+            <li class="li-musicListSongAmount">0首歌</li>
+        </ul>
+    </div>
+    <div class="div-blank" id="div-bottom"></div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="layer/layer.js"></script>
+<script src="js/saveToMusicList.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/save.css">
+</body>
+</html>

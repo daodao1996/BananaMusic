@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="./css/bootstrapValidator.css">
+<script type="text/javascript" src="./js/jsTool/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="./js/jsTool/layDate/laydate/laydate.js"></script>
+<script src="./js/bootstrapValidator.js"></script>
+<link rel="stylesheet" href="css/myMusic-userConfig.css"/>
+<script src="js/jsTool/jquery.form.js"></script>
+<script src="./js/suggest.js"></script>
+<link rel="stylesheet" href="./css/content.css"/>
+<style>
+    #foot-div {
+        height: 100px;
+        /*width: 100%;*/
+        background-color: #f4f3f2;
+        padding-top: 24px;
+        /*margin: 0 auto;*/
+        text-align: center;
+        margin:0 auto;
+        width:1200px;
+        font-size: 14px;
+        color: #2c2c2b;
+    }
+
+    #foot-div p {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+</style>
+<body>
+<div id="nav">
+    <ul>
+        <li id="nav-logo"><img src="img/logo.png"/></li>
+        <li class="nav-item" id="nav-mainpage"><p class="pnav">首页</p></li>
+        <li class="nav-item" id="nav-singer" ><p class="pnav">歌手</p></li>
+        <li class="nav-item" id="nav-music" ><p class="pnav">歌单</p></li>
+        <li class="nav-item" id="nav-mymusic" ><p class="pnav">我的音乐</p></li>
+        <li id="nav-search">
+            <input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+            <img id="nav-search-icon" src="img/search.png" onclick="jumpSearch()"/>
+        </li>
+        <li id="nav-login"><a href=""><p>注销</p></a></li>
+    </ul>
+</div>
+<div id="middle-div">
+<div id="container">
+    <div id="div-middle-top">
+        基本设置
+        <hr>
+    </div>
+    <div id="div-middle-content">
+        <form class="form-horizontal" id="userForm">
+            <img src="./img/user1.png" name="user_pic" id="user_pic" >
+            <input type="file" name="userIcon" id="file_upload" accept="image/png, image/jpeg">
+            <div class="form-group">
+                <label for="username" class="control-label col-md-2">昵称</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="username" placeholder="2到12位数字,汉字或字母" name="username">
+                    <input type="hidden" class="form-control" id="oldusername" name="oldusername">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="control-label col-md-2">密码</label>
+                <div class="col-md-6">
+                    <a href="resetPassword.html" id="changePassword"><p>点这里修改密码</p></a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="control-label col-md-2">邮箱</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="control-label col-md-2">用户简介</label>
+                <div class="col-md-6">
+                    <textarea class="form-control" rows="4" id="desc" placeholder="说点什么吧" name="desc"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-gender" class="control-label col-md-2">性别</label>
+                <div class="col-md-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="male" value="男"> 男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="female" value="女"> 女
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="secret" value="保密"> 保密
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-region" class="control-label col-md-2">地区</label>
+                <div class="col-md-6">
+                    <select id="province" onchange="selectprovince(this);" name="province"></select>
+                    <select id="city" name="city"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-birthday" class="control-label col-md-2">生日</label>
+                <div class="col-md-6">
+                    <input type="text" id="birthday" name="birthday">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn1">提交</button>
+
+        </form>
+
+    </div>
+
+</div>
+</div>
+<div id="div-footer">
+    <div id="foot-div">
+        <p style="margin-top:0px;">
+            <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+        </p>
+        <p>布拿拿音乐版权所有© 2018</p>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/jsTool/provinceSelect.js"></script>
+<script src="js/myMusic-userConfig.js"></script>
+
+<script src="layer/layer.js"></script>
+</html>

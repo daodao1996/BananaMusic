@@ -1,0 +1,56 @@
+.page{
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    top:40px;
+    left:39%;
+}
+.page>li{
+    float: left;
+    /* padding: 5px 10px; */
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+}
+.page .pageItem{
+    color: #999999;
+    width:45px;
+    height: 45px;
+    /* padding-left: 18px; */
+    font-size: 24px;
+    font-family: "微软雅黑";
+    /* border: solid thin #DDDDDD; */
+    /* margin: 5px; */
+}
+.page .pageItemActive{
+    width:45px;
+    height: 45px;
+    border: solid thin #ff9800;
+    /* margin: 5px; */
+    /* padding-left: 18px; */
+    background-color: #ff9800;
+    color:#fffffa;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+.page .pageItem:hover{
+    width:45px;
+    height: 45px;
+    /* padding-left: 18px; */
+    border: solid thin #ff9800;
+    background-color: #fffffa;
+    color:#ff9800;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+.page .pageItemDisable{
+    width:45px;
+    height: 45px;
+    /* padding-left: 18px; */
+    font-size: 24px;
+    font-family: "微软雅黑";
+    /* border: solid thin #DDDDDD; */
+    /* margin: 5px; */
+    color: #999999;
+    background-color: #DDDDDD;
+}

@@ -1,0 +1,51 @@
+.page{
+    height: 45px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    left: 475px;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.page>li{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+}
+.page .pageItem{
+    color: #999999;
+    width:45px;
+    height: 45px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.page .pageItemActive{
+    width:45px;
+    height: 45px;
+    border: solid thin #ff9800;
+    background-color: #ff9800;
+    color:#fffffa;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.page .pageItem:hover{
+    width:45px;
+    height: 45px;
+    border: solid thin #ff9800;
+    background-color: #fffffa;
+    color:#ff9800;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.page .pageItemDisable{
+    width:45px;
+    height: 45px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: #999999;
+    background-color: #DDDDDD;
+}

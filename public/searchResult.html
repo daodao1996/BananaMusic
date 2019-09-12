@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "Generator" content = "EditPlus®">
+    <meta name = "Author" content = "">
+    <meta name = "Keywords" content = "">
+    <meta name = "Description" content = "">
+    <link rel = "stylesheet" href = "https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src = "https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src = "https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/searchResult.js"></script>
+    <script src="./js/page.js"></script>
+
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+    <link rel = "stylesheet" href = "./css/searchResult.css">
+    <link rel = "stylesheet" href = "./css/searchPage.css">
+    <style>
+        #foot-div {
+            height: 100px;
+            /*width: 100%;*/
+            background-color: #f4f3f2;
+            padding-top: 24px;
+            /*margin: 0 auto;*/
+            text-align: center;
+            margin:0 auto;
+            width:1200px;
+            font-size: 14px;
+            color: #2c2c2b;
+        }
+
+        #foot-div p {
+            width: 100%;
+            margin-top: 0px;
+        }
+        #foot-div a:hover{
+            color: #ff9800;
+            text-decoration: none;
+        }
+        #nav-login p:hover{
+            color: #ff9800;
+        }
+
+    </style>
+</head>
+<body>
+<div id = "nav">
+    <ul>
+        <li id = "nav-logo" onclick="jumpMainpage()"><img src = "./img/logo.png"/></li>
+        <li class = "nav-item" id = "nav-mainpage" onclick="jumpMainpage()"><p class = "pnav">首页</p></li>
+        <li class = "nav-item" id = "nav-singer" onclick="jumpSinger()"><p class = "pnav">歌手</p></li>
+        <li class = "nav-item" id = "nav-music" onclick="jumpPlaylist()"><p class = "pnav">歌单</p></li>
+        <li class = "nav-item" id = "nav-mymusic" onclick="jumpMymusic()"><p class = "pnav">我的音乐</p></li>
+        <li id = "nav-search"><input type = "text" placeholder = "搜索歌曲，歌手" id="keyword0"/>
+            <a href = "javascript:void(0);" onclick="search0()">
+                <img id = "nav-search-icon" src = "./img/search.png"/>
+            </a>
+        </li>
+        <li id = "nav-login"><a href = "login.html"><p>登录</p></a></li>
+    </ul>
+</div>
+
+
+<div id = "middle-div">
+
+    <!--搜索框-->
+    <div id = "search_bg">
+        <input type = "text" placeholder = "搜索歌曲，歌手" id="keyword"/>
+        <a href = "javascript:void(0);" onclick="search1()"><img id = "search_bg_icon" src = "./img/search.png" alt = ""/></a>
+    </div>
+
+    <div id = "search_title">
+        <ul>
+            <li onclick="reSearuchMusic()" id="music">单曲</li>
+            <li onclick="searchSinger()" id="singer">歌手</li>
+            <li onclick="searchPlaylist()" id="playlist">歌单</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div id = "search_result">
+
+        <!--歌曲搜索结果标题头-->
+        <div id = "res_title">
+            <div class = "row" style = "margin-left: 26px">
+                <div class = "col-sm-5">歌曲</div>
+                <div class = "col-sm-3">歌手</div>
+                <div class = "col-sm-3">时长</div>
+            </div>
+        </div>
+
+        <!--歌曲搜索结果-->
+        <div id = "result">
+
+        </div>
+
+
+    </div>
+    <ul class="page" id="page" style="width: 225px"></ul>
+    <div class="row" style = "height: 105px;">
+        <div class="col-sm-12">
+            <div id="foot-div">
+                <p style="margin-top:0px;">
+                    <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+                </p>
+                <p>布拿拿音乐版权所有© 2018</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="layer/layer.js"></script>
+<link rel="stylesheet" href="css/save.css">
+
+</body>
+<script type = "text/javascript">
+    //class="one"图标隐藏、显示
+    function over1() {
+        $('.one').mouseover(function () {
+            $(this).children().children().children(".img1").show();
+        })
+    }
+
+    function out1() {
+        $('.one').mouseout(function () {
+            $(this).children().children().children(".img1").hide();
+        })
+    }
+
+    //class="two"图标隐藏、显示
+    function over2() {
+        $('.two').mouseover(function () {
+            $(this).children().children().children(".img1").show();
+        })
+    }
+
+    function out2() {
+        $('.two').mouseout(function () {
+            $(this).children().children().children(".img1").hide();
+        })
+    }
+
+</script>
+<script src="layer/layer.js"></script>
+</html>

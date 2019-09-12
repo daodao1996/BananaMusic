@@ -1,0 +1,423 @@
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+width:100%;
+margin:0;
+background-color:#fffffa !important;
+
+}
+ li{list-style:none;}
+ iframe{width:100%;height:100%;}
+ a{text-decoration:none;color: #484444;}
+ a:hover{
+	 color: #ff9800 !important;
+	 text-decoration: none !important;
+ }
+ #Z1{margin-left:49px;font-family:"黑体";font-size:30px;margin-top:49px;}
+ 
+ 
+	#Z8{margin-top:120px;margin-left:58px;font-family:"微软雅黑";font-size:29px;width:450px;}
+	 #Z9{margin-top:35px;margin-left:55px; font-size: 22px;
+		font-family: "微软雅黑";
+		color: #50504f;} 
+ #nav{width:1200px;height:80px;margin:0 auto;position:relative;background-color:#fffffa;}
+ .nav-item{height:80px;width:8%;margin-top:0px;float:left;cursor:pointer;}
+ #nav-logo{margin-top:20px;margin-left:0;height:40px;float:left;width:14%;cursor:pointer;margin-right:3%;}
+/*把下面两行中的nav-*修改成自己的即可*/
+ #nav-music{background-color:#ff9800;}
+ #nav-music p{color:#fffffa;}
+ .top_song_list{
+	text-align: center;
+}
+.lyric_name{
+	font-size: 22px;
+	font-family: "微软雅黑";
+	color: #50504f;
+}
+#D1{
+	width:270px;
+	height:2000px;
+	float:left;
+}
+	#T1{
+	margin-top:49px;
+	margin-left:55px;
+	float:left;
+	width: 160px;
+	height: 160px;
+	
+	}
+	#T2{
+	margin-left:58px;
+	
+	}
+	
+	#T5{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T6{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T7{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T8{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T9{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T10{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T11{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T12{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T13{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T14{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T15{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T16{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T17{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T18{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+	#T19{
+	width:45px;
+	height:45px;
+	text-align:center;
+	}
+
+ #nav-mymusic{width:12%;}
+ #nav-mymusic p{width:84px;}
+ #nav-search{margin-left:15%;width:22%;margin-top:30px;height:30px;float:left;}
+ #nav-search input{padding:0 0 0 5px;float:left;width:100%;height:28px;font-size:14px;border-radius:4px;border:2px solid #a8a8a8}
+ #nav-login{margin-left:5%;width:5%;height:25px;float:left;margin-top:30px;}
+ .nav-item p{font-size:20px;color:#343433;font-family:'Microsoft Yahei';height:22.25px;width:42px;margin:28.875px auto;}
+ #nav-login p{font-size:18px;color:#484444;font-family:'Microsoft Yahei';height:20px;width:100%;margin:0;float:left;}
+ #nav-search-icon{position:absolute;top:35px;left:87%;}
+ #h1{
+	width:170px;
+	margin-left:40px;
+	margin-top:33px;
+ }
+ #middle-div{display:block;width:1200px;border:none #eda893 solid;margin:0 auto;overflow:hidden;}
+#L1 li{
+float:left;
+
+margin-right:5px;
+}
+
+#comment_div{display:block;width:1200px;border:none;margin:0 auto; margin-top: 30px; background: #fffffa; padding-bottom: 20px;}
+.comment{
+	width: 1200px;
+}
+.comment .page2{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom: 40px;
+}
+
+#page1{
+	margin-top: 40px;
+}
+
+
+#L1{
+margin-left:-36px;
+width:550px;
+height:50px;
+	
+}
+#D2{
+	width:750px;
+	height:212px;
+}
+
+#D2 #T1{
+	margin-top:49px;
+	margin-left:55px;
+	float:left;
+	width: 160px;
+	height: 160px;
+}
+#music_popular{
+float:left;
+height:200px;
+width:510px;
+}
+
+#right_div{
+width:850px;
+
+float:left;
+}
+
+tr:nth-child(odd){
+	background-color:#f7f7f7;
+}
+#L3{
+	width:805px;
+	height:750px;
+}
+.L3 tr{
+	width:805px;
+	height:50px;
+}
+.L3 tr td{
+	font-family:"宋体";font-size:24px;
+	height:50px;
+
+}
+#L4{
+	margin-top:none;
+	width:805px;
+	height:50px;
+	border:1px;
+	border-color:#cccccc;
+}
+table{
+width:805px;
+margin-left:55px;
+margin-top:none;
+border-color:#cccccc;
+
+}
+#h2{
+width:805px;
+height:2px;
+background-color:#ff9800;
+border:none;
+margin-left:55px;
+margin-top:8px;
+}
+
+#A1{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A2{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A3{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A4{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A5{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A6{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A7{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A8{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A9{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A10{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A11{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;   
+	
+}
+#A12{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A13{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A14{
+	font-family:"宋体";
+	font-size:14px;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+#A15{
+	font-family:"宋体";
+	font-size:100%;
+	margin-left:20px;
+	margin-top:20px;
+	width:42px;
+	height:20px;
+	
+}
+
+.page a{
+	text-decoration:none;
+	border:1px solid #f9d52b;
+	padding:5px 7px;
+	color:#767675;
+}
+#JS1  a{
+	color:black;
+}
+#JS2 a{
+	color:black;
+}
+.song{
+	letter-spacing:5px;
+}
+.song1{
+	letter-spacing:4px;
+}
+.song2{
+	letter-spacing:2px;
+}
+.song3{
+	letter-spacing: 9px;
+}
+#top_list{
+	width: 172px;
+	margin-top:37px;
+	padding: 0px !important;
+	text-align: center;
+	/* border: 1px solid rgba(255,180,0,0.6); */
+	margin-left: 40px;
+}
+.top_music{
+	width:170px;
+	height:70px;
+	line-height:70px;
+	font-family:"微软雅黑";font-size:18px;width:170px;
+	height:70px;
+	background:#fffffa;	
+	color:black;
+	cursor: pointer;
+}
+
+.first{
+	background: #ff9800;
+	color:#ffffff;
+	text-align: middle;
+
+}
+.foot_div{
+	margin-top: 20px;
+}
+

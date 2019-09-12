@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+  <link rel="stylesheet" href="./css/top.css" />
+  <link rel="stylesheet" href="./css/comment.css" />
+   <!-- <script src="./js/MusicJs.js"></script> -->
+   <script src="./js/top.js"></script>
+   <link rel="stylesheet" href="./css/page1.css">
+   <script src="./js/page.js"></script>
+   <script src="./js/page1.js"></script>
+   <link rel="stylesheet" href="./css/footer2.css">
+    <!-- <link href="./css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+     -->
+   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+
+	<script src=""></script>
+    <style>
+        #foot-div {
+            height: 100px;
+            /*width: 100%;*/
+            background-color: #f4f3f2;
+            padding-top: 24px;
+            /*margin: 0 auto;*/
+            text-align: center;
+            margin:0 auto;
+            width:1200px;
+            font-size: 14px;
+            color: #2c2c2b;
+        }
+
+        #foot-div p {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<div id = "nav">
+    <ul>
+        <li id = "nav-logo" onclick="jumpMainpage()"><img src = "img/logo.png"/> </li>
+        <li class = "nav-item" id = "nav-mainpage" onclick="jumpMainpage()"><p class = "pnav">首页</p></li>
+        <li class = "nav-item" id = "nav-singer" onclick="jumpSinger()"><p class = "pnav">歌手</p></li>
+        <li class = "nav-item" id = "nav-music" onclick="jumpPlaylist()"><p class = "pnav">歌单</p></li>
+        <li class = "nav-item" id = "nav-mymusic" onclick="jumpMymusic()"><p class = "pnav">我的音乐</p></li>
+        <li id = "nav-search">
+            <input type = "text" placeholder = "搜索歌曲，歌手" id="keyword0"/>
+            <img id = "nav-search-icon" src = "img/search.png" onclick="jumpSearchResult()"/>
+        </li>
+        <li id = "nav-login"><a href=""><p>登录</p></a></li>
+    </ul>
+</div>
+
+
+
+  <div id="middle-div">
+  <div id = "D1">
+    <h2 id = "Z1">音乐巅峰榜</h2>
+	<hr id="h1">
+  <ul id="top_list">
+    <li  class="top_music first " onclick="toplist(this)" value="巅峰榜·流行指数">巅峰榜·流行指数</li>
+    <li  class="top_music" onclick="toplist(this)" value="巅峰榜·网络歌曲">巅峰榜·网络歌曲</li>
+    <li  class="top_music" onclick="toplist(this)" value="巅峰榜·影视金曲">巅峰榜·影视金曲</li>
+    <li  class="top_music song" onclick="toplist(this)" value="巅峰榜·热歌">巅峰榜·热歌 </li>
+    <li  class="top_music song" onclick="toplist(this)" value="巅峰榜·新歌">巅峰榜·新歌 </li>
+    <li  class="top_music" onclick="toplist(this)" value="巅峰榜·K歌金曲">巅峰榜·K歌金曲</li>
+    <li  class="top_music song3" onclick="toplist(this)" value="英国UK榜">英国UK榜</li>
+    <li  class="top_music song2" onclick="toplist(this)" value="美国iTunes榜">美国iTunes榜</li>
+    <li  class="top_music song " onclick="toplist(this)" value="韩国Mnet榜">韩国Mnet榜</li>
+    <li  class="top_music song1" onclick="toplist(this)" value="美国公告牌榜">美国公告牌榜</li>
+
+</ul>
+
+</div>
+<div id="right_div">
+ <div id="D2">
+	<img src="img/巅峰榜.png" alt=""  id="T1"/>
+	<div id="music_popular">
+	<h2 id="Z8"></h2>
+	<!-- <ul id="L1">
+	<li><a href=""><img src="img/播放.png" alt="" id="T2" onclick=""/></a></li>
+	<li><a href=""><img src="img/收藏.png" alt="" id="T3"/></a></li>
+	<li><a href=""><img src="img/评论.png" alt="" id="T4"/></a></li>
+	
+	</ul> -->
+	
+</div> 
+
+
+
+
+</div>
+<div>
+<div id="music_list">
+<div>
+<h2 id="Z9">歌曲列表</h2>
+<hr  id ="h2"/>
+</div>
+<div>
+  <table frame="vsides" frame="above" rules="none" class="top_song_list">
+    <thead id="L4"  >
+    <tr width="50px" style="background-color: #fffffa">
+    <td width="33%" style="font-famliy:宋体;font-size:100%">歌曲</td>
+    <td width="33%" style="font-famliy:宋体;font-size:18px">歌手</td>
+    <td width="34#" style="font-famliy:宋体;font-size:18px">时长</td>
+    
+    </tr>
+    </thead>
+  <tbody class="L3">
+  
+  </tbody>
+  
+  </table>
+</div>
+</div>
+
+<!-- <div class="page">
+	<a>上一页</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a>下一页</a>
+</div> -->
+
+<ul class="page" id="page1"></ul>
+
+
+<!-- 评论 -->
+<div id="comment_div"  >
+  <div  class="comment" >
+      <div id="main_comment">
+          <p class="lyric_name">评论<span class="count_comment">共11232条评论</span></p>
+          <textarea style="z-index: -999;" placeholder="期待你的评论......" class="comment_write" onkeyup="commentCoun()"></textarea><span class="count_comment_1">剩余<span class="count"　id="count1">300</span>字</span>
+          <p class="pubic_commet"><button id="commit_comment" onclick="publicMessage()">发表评论</button><img src="./img/笑脸.png"></p>
+      </div>
+      <div id="wonderful_comment">
+         
+    </div>
+    <div align="center"  class="comment">
+    <ul class="page page2" id="page"></ul>
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  </div>
+<div id="foot-div">
+    <p style="margin-top:0px;">
+        <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+    </p>
+    <p>布拿拿音乐版权所有© 2018</p>
+</div>
+</body>
+<script src="layer/layer.js"></script>
+</html>

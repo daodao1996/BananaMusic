@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<script type="text/javascript" src="./js/jsTool/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="./js/jsTool/layDate/laydate/laydate.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<link rel="stylesheet" href="css/myMusic-userConfig.css"/>
+<script src="js/jsTool/jquery.form.js"></script>
+<!--<style>-->
+    <!--#middle-div{-->
+        <!--display: none;-->
+    <!--}-->
+<!--</style>-->
+<body>
+<div id="nav">
+    <ul>
+        <li id="nav-logo"><img src="img/logo.png"/></li>
+        <li class="nav-item" id="nav-mainpage"><p class="pnav">首页</p></li>
+        <li class="nav-item" id="nav-singer" ><p class="pnav">歌手</p></li>
+        <li class="nav-item" id="nav-music" ><p class="pnav">歌单</p></li>
+        <li class="nav-item" id="nav-mymusic" ><p class="pnav">我的音乐</p></li>
+        <li id="nav-search">
+            <input type="text" placeholder="搜索歌曲，歌手" id="keyword0"/>
+            <img id="nav-search-icon" src="img/search.png" onclick="jumpSearch()"/>
+        </li>
+        <li id="nav-login"><a href=""><p>注销</p></a></li>
+    </ul>
+</div>
+<div id="middle-div">
+<div id="container">
+    <div id="div-middle-top">
+        基本设置
+        <hr>
+    </div>
+    <div id="div-middle-content">
+        <form class="form-horizontal" id="userForm">
+            <img name="user_pic" id="user_pic" src="img/user.png" >
+            <input type="file" name="userIcon" id="file_upload" accept="image/png, image/jpeg">
+            <div class="form-group">
+                <label for="username" class="control-label col-md-2">昵称</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="username" placeholder="2到12位字母、数字、点或下划线" name="username">
+                    <input type="hidden" class="form-control" id="oldusername" name="oldusername">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username" class="control-label col-md-2">密码</label>
+                <div class="col-md-6">
+                    <a href="" id="changePassword"><p>点这里修改密码</p></a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="control-label col-md-2">邮箱</label>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="control-label col-md-2">用户简介</label>
+                <div class="col-md-6">
+                    <textarea class="form-control" rows="4" id="desc" placeholder="说点什么吧" name="desc"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-gender" class="control-label col-md-2">性别</label>
+                <div class="col-md-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="male" value="男"> 男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="female" value="女"> 女
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="secret" value="保密"> 保密
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-region" class="control-label col-md-2">地区</label>
+                <div class="col-md-6">
+                    <select id="province" onchange="selectprovince(this);" name="province"></select>
+                    <select id="city" name="city"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="label-birthday" class="control-label col-md-2">生日</label>
+                <div class="col-md-6">
+                    <input type="text" id="birthday" name="birthday">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn1">提交</button>
+
+        </form>
+
+    </div>
+
+</div>
+</div>
+<div id="div-footer"><iframe src="footer.html" frameborder="0" name="middlepage" id="footer" scrolling="no"></iframe></div>
+<script type="text/javascript" src="./js/jsTool/provinceSelect.js"></script>
+<script src="js/myMusic-userConfig.js"></script>
+</body>
+</html>

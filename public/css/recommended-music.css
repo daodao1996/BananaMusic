@@ -1,0 +1,68 @@
+#nav-music{background-color:#ff9800;}
+ #nav-music p{color:#fffffa;}
+ body{overflow-y: scroll;
+     overflow-x: hidden; width:100%;margin:0;background-color:#fffffa;}
+ li{list-style:none;}
+ iframe{width:100%;height:100%;}
+ a{text-decoration:none;color: #484444;}
+ 
+
+ #nav-mymusic{width:12%;}
+ #nav-mymusic p{width:84px;}
+ #nav{width:1200px;height:100px;margin:0 auto;position:relative;background-color:#fffffa;}
+ #nav>ul{height:80px;width:100%;padding: 20px 0 0 0;margin:0;}
+ .nav-item{height:80px;width:8%;margin-top:0px;float:left;cursor:pointer;}
+ .nav-item p{font-size:20px;color:#343433;font-family:'Microsoft Yahei';height:22.25px;width:42px;margin:28.875px auto;}
+ #nav-logo{margin-top:20px;margin-left:0;height:40px;float:left;width:14%;cursor:pointer;margin-right:3%;}
+ #nav-search{margin-left:15%;width:22%;margin-top:30px;height:30px;float:left;}
+ #nav-search-icon{position:absolute;top:56px;left:88.2%;}
+ #nav-search input{padding:0 0 0 5px;float:left;width:100%;height:28px;font-size:14px;border-radius: 4px;border: 2px solid #a8a8a8;}
+ #nav-login{margin-left:5%;width:5%;height:25px;float:left;margin-top:30px;}
+ #nav-login p{font-size:18px;margin:0;}
+ #middle-div{display:block;width:1200px;border:0px #eda893 solid;margin:0 auto;}
+
+
+ #song-sheet ul{
+     margin-left:90px;
+     margin-top:40px;
+ }
+ #recommended-text{
+     font-size: 24px;
+     font-family: 微软雅黑;
+     color:#4a4a47;
+     width:100%;
+     margin:30px auto 30px 30px;
+ }
+ .li-style li{
+     position:relative;
+	 cursor:pointer;
+     width:198px;
+     height:198px;
+     margin:10px 82px 100px 0px;
+     /*background: green;*/
+     float:left;
+ }
+
+ .img_style img{
+    cursor: pointer;
+    transition: all 0.6s;
+ }
+.img_style img:hover{
+    transform: scale(1.15);
+}
+ .text-style{
+     width:198px;
+     font-size: 16px;
+     color:#484444;
+     font-family: 宋体;
+     position:absolute;
+     text-align:center;
+     top:225px;
+ }
+ #page-up-down{
+     text-align: center;
+ }
+.ul-li:nth-child(2){
+    font-size: 12px;
+    color:red;
+}

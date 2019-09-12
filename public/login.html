@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "Generator" content = "EditPlus®">
+    <meta name = "Author" content = "">
+    <meta name = "Keywords" content = "">
+    <meta name = "Description" content = "">
+    <link rel = "stylesheet" href = "https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src = "https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src = "https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>布拿拿音乐</title>
+    <link rel="icon" href="./img/icon_logo.png">
+    <link rel="icon" href="./img/icon_logo.png">
+    <link rel = "stylesheet" href = "./css/login.css">
+    <script src="./js/suggest.js"></script>
+    <link rel="stylesheet" href="./css/content.css"/>
+    <script src="./js/login.js"></script>
+    <style>
+        #foot-div {
+            height: 100px;
+            /*width: 100%;*/
+            background-color: #f4f3f2;
+            padding-top: 24px;
+            /*margin: 0 auto;*/
+            text-align: center;
+            margin:0 auto;
+            width:1200px;
+            font-size: 14px;
+            color: #2c2c2b;
+        }
+
+        #foot-div p {
+            width: 100%;
+            margin-top: 0px;
+        }
+        #nav-search-icon:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id = "nav">
+    <ul>
+        <li id = "nav-logo" onclick="jumpMainpage()"><img src = "img/logo.png"/></li>
+        <li class = "nav-item" id = "nav-mainpage" onclick="jumpMainpage()"><p class = "pnav">首页</p></li>
+        <li class = "nav-item" id = "nav-singer" onclick="jumpSinger()"><p class = "pnav">歌手</p></li>
+        <li class = "nav-item" id = "nav-music" onclick="jumpPlaylist()"><p class = "pnav">歌单</p></li>
+        <li class = "nav-item" id = "nav-mymusic" onclick="jumpMymusic()"><p class = "pnav">我的音乐</p></li>
+        <li id = "nav-search"><input type = "text" placeholder = "搜索歌曲，歌手" id="keyword0"/>
+            <img id = "nav-search-icon" src = "img/search.png" onclick="jumpSearchResult()"/></li>
+        <li id = "nav-login" onclick="jumpLogin()"><p><a href = "">登录</a></p></li>
+    </ul>
+</div>
+
+
+<div id = "middle-div">
+    <div id = "login_bg">
+        <div id = "login">
+            <p>登录布拿拿音乐</p>
+            <input type = "text" placeholder = "请输入用户名" class = "inp" name="user" id="username"><img id = "user_icon" src = "./img/user.png">
+            <input type = "password" placeholder = "请输入密码" class = "inp" name="pass" id="password"><img id = "passwd_icon" src = "./img/passwd.png" alt = "">
+            <input type = "submit" value = "登&nbsp;录" class = "btn" onclick="login()">
+            <p>
+                <span style = "float: left"><a href = "./register.html">新用户注册</a></span><span style = "float: right"><a href = "resetPassword.html">忘记密码</a></span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class = "row" style = "height: 105px">
+    <div class = "col-sm-12" style = "text-align: center">
+        <div id="foot-div">
+            <p style="margin-top:0px;">
+                <a href="###" onclick="window.open('aboutus.html','布拿拿音乐')">关于我们</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('useragreement.html','布拿拿音乐')">用户协议</a>&nbsp;|&nbsp;<a href="###" onclick="window.open('privacypolicy.html','布拿拿音乐')">隐私政策</a>&nbsp;|&nbsp;<a href="###" onclick="layuitest()">联系我们</a>
+            </p>
+            <p>布拿拿音乐版权所有© 2018</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="layer/layer.js"></script>
+</html>

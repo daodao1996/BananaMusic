@@ -1,0 +1,55 @@
+
+html, body {
+    width: 100%;
+}
+ul li {
+    list-style: none;
+}
+*{margin:0;padding:0;}
+#box {
+    width: 1200px;
+    margin: 20px auto;
+}
+.slide {
+    height: 500px;
+    position: relative;
+}
+.slide ul {
+    height: 100%;
+}
+.slide li {
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slide li img{
+    width: 100%;
+}
+.arraw {
+    opacity: 0;
+}
+.arraw a {
+    width: 70px;
+    height: 110px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+    z-index: 999;
+}
+.next>a{
+    background: url(../img/right.png) no-repeat;
+    background-size: 100% 100%;
+    right: -10px;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+}
+.prev>a{
+    background: url(../img/left.png) no-repeat;
+    background-size: 100% 100%;
+    left: -10px;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+}
