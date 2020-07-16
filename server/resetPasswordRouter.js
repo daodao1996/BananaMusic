@@ -8,8 +8,8 @@ const url = 'mongodb://localhost:27017';
 const dbName = 'singer';
 const SMSClient = require('@alicloud/sms-sdk');
 // ACCESS_KEY_ID/ACCESS_KEY_SECRET 根据实际申请的账号信息进行替换
-const accessKeyId = 'LTAIiaKMFbpcirmq';
-const secretAccessKey = '9r8VwXrtOctb62A8xn4RpW1rrNCqgh';
+const accessKeyId = 'pls replace with your access Id';
+const secretAccessKey = 'pls replace with your secret access key';
 //初始化sms_client
 let smsClient = new SMSClient({accessKeyId, secretAccessKey});
 
